@@ -66,8 +66,8 @@ TEMPLATE = r"""<!DOCTYPE html>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <title>World Cup 2026 — Round-of-32 opponent predictions</title>
 <style>
-:root{--bg:#faf9f6;--surface:#fff;--line:#e7e5df;--ink:#1d1c1a;--muted:#6b6a66;--faint:#9c9b96;--accent:#1d9e75;--accent-soft:#e1f5ee;--elim:#d3d1c7}
-@media(prefers-color-scheme:dark){:root{--bg:#1a1916;--surface:#232220;--line:#34332f;--ink:#f0efe9;--muted:#a3a29c;--faint:#6f6e69;--accent:#2fb98c;--accent-soft:#123a30;--elim:#3a3935}}
+:root{--bg:#faf9f6;--surface:#fff;--line:#e7e5df;--ink:#1d1c1a;--muted:#6b6a66;--faint:#9c9b96;--accent:#a16207;--accent-soft:#fbf3df;--elim:#d3d1c7}
+@media(prefers-color-scheme:dark){:root{--bg:#1a1916;--surface:#232220;--line:#34332f;--ink:#f0efe9;--muted:#a3a29c;--faint:#6f6e69;--accent:#e3b341;--accent-soft:#33290d;--elim:#3a3935}}
 *{box-sizing:border-box}
 body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;line-height:1.5;-webkit-font-smoothing:antialiased}
 .wrap{max-width:1060px;margin:0 auto;padding:32px 20px 64px}
@@ -436,8 +436,10 @@ def main():
                 os.path.getmtime('opta_positions.csv')).strftime('%d %B %Y, %H:%M'))
             .replace('/*SNAPDATE*/', datetime.datetime.fromtimestamp(
                 os.path.getmtime('opta_positions.csv')).strftime('%d %B %Y')))
-    open('wc26_r32_predictions.html', 'w', encoding='utf-8').write(html)
-    print('wrote wc26_r32_predictions.html')
+    # write the canonical page plus index.html (GitHub Pages root landing copy)
+    for _out in ('wc26_r32_predictions.html', 'index.html'):
+        open(_out, 'w', encoding='utf-8').write(html)
+    print('wrote wc26_r32_predictions.html + index.html')
 
 
 if __name__ == '__main__':
