@@ -132,6 +132,7 @@ a{color:var(--accent)}
 .fixture.show{display:block}
 .fixture b{color:var(--ink);font-weight:600}
 .fxpc{font-weight:600;color:var(--accent);white-space:nowrap}
+.fxdt::before{content:"\00A0\00B7\00A0"}
 .fixture .fxhead{font-weight:600;color:var(--ink);font-size:12px;margin-bottom:5px}
 .mdate{margin-left:auto;font-size:11px;color:var(--faint);margin-right:10px;white-space:nowrap}
 .bwrap{overflow:auto;padding-bottom:8px}
@@ -178,6 +179,8 @@ a{color:var(--accent)}
  .mu .grp{display:none}
  .source{flex-direction:column;gap:8px}
  .frozen-note{display:block;margin:6px 0 0;width:fit-content}
+ .fxdt{display:block}
+ .fxdt::before{content:""}
 }
 </style></head>
 <body><div class="wrap">
@@ -261,7 +264,7 @@ ddsearch.oninput=()=>buildList(ddsearch.value);
 document.addEventListener('click',e=>{if(!document.getElementById('dd').contains(e.target))closeDD();});
 function go(name){if(!DATA[name])return;team=name;if(view!=='overall'&&!DATA[team].pos[view])view='overall';updateTrigger();render();window.scrollTo({top:0,behavior:'smooth'});}
 updateTrigger();
-function overall(t){const a={};const P=DATA[t].pos;for(const p in P){for(const x of P[p].o){const n=x[0],c=x[1];const k=isE(n)?'Eliminated (no round of 32)':n;a[k]=(a[k]||0)+P[p].p*c;}}return Object.entries(a).sort((x,y)=>y[1]-x[1]);}
+function overall(t){const a={};const P=DATA[t].pos;for(const p in P){for(const x of P[p].o){const n=x[0],c=x[1];const k=isE(n)?'Eliminated':n;a[k]=(a[k]||0)+P[p].p*c;}}return Object.entries(a).sort((x,y)=>y[1]-x[1]);}
 function teamSpan(n){if(isE(n))return '<span class="lt">'+n+'</span>';
  return '<span class="lnk" data-team="'+n+'">'+fl(n)+'<span class="lt">'+n+'</span>'+gtag(n)+'</span>';}
 function render(){
@@ -276,7 +279,7 @@ function render(){
   cap='<span class="muted">If</span> '+'<b>'+team+'</b> <span class="muted">finish</span> <b>'+view+'</b> <span class="muted">('+pct(P[view].p)+' likely), their opponent:</span>';}
  document.getElementById('cap').innerHTML=cap;
  const fx=document.getElementById('fixture'),g=DATA[team].g;
- function fmtMatch(mn){const s=SCHED[mn];return 'Match '+mn+' &middot; '+s[2]+' &middot; '+s[0]+(s[1]?', '+s[1]:'');}
+ function fmtMatch(mn){const s=SCHED[mn];return 'Match '+mn+' &middot; '+s[2]+'<span class="fxdt">'+s[0]+(s[1]?', '+s[1]:'')+'</span>';}
  function fxline(p){
   if(p==='1st'||p==='2nd'){const mn=POSMATCH[p[0]]&&POSMATCH[p[0]][g];return mn?fmtMatch(mn):null;}
   if(p==='3rd'){const arr=(G3RD[g]||[]).filter(o=>o[1]>=0.005);if(!arr.length)return null;
