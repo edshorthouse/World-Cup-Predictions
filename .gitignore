@@ -1,0 +1,5 @@
+__pycache__/
+*.pyc
+wc.xlsx
+England_R32_forecast_exact*.xlsx
+opponent_matrix_exact_*.csv

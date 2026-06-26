@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>World Cup 2026 — Round-of-32 opponent predictions</title>
+<style>
+:root{--bg:#faf9f6;--surface:#fff;--line:#e7e5df;--ink:#1d1c1a;--muted:#6b6a66;--faint:#9c9b96;--accent:#1d9e75;--accent-soft:#e1f5ee;--elim:#d3d1c7}
+@media(prefers-color-scheme:dark){:root{--bg:#1a1916;--surface:#232220;--line:#34332f;--ink:#f0efe9;--muted:#a3a29c;--faint:#6f6e69;--accent:#2fb98c;--accent-soft:#123a30;--elim:#3a3935}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;line-height:1.5;-webkit-font-smoothing:antialiased}
+.wrap{max-width:1060px;margin:0 auto;padding:32px 20px 64px}
+h1{font-size:25px;font-weight:600;margin:0 0 2px;display:flex;align-items:center;gap:10px;letter-spacing:-.01em}
+h1 img{height:30px;width:30px}
+.tsub{font-size:17px;font-weight:500;color:var(--accent);margin:0 0 14px;letter-spacing:.01em}
+.sub{color:var(--muted);font-size:14px;margin:0 0 16px}
+.source{display:flex;gap:11px;align-items:flex-start;background:var(--accent-soft);border:1px solid var(--line);border-radius:12px;padding:12px 14px;font-size:13px;color:var(--ink);margin:0 0 24px;line-height:1.55}
+.src-badge{flex-shrink:0;font-weight:600;color:var(--accent);font-size:12px;border:1px solid var(--accent);border-radius:6px;padding:3px 9px;white-space:nowrap}
+.updated{font-size:12px;color:var(--faint);margin:-10px 0 20px}
+.source a{font-weight:500;cursor:pointer}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:20px 22px;margin-bottom:22px}
+label{display:block;font-size:13px;color:var(--muted);margin-bottom:6px}
+.dd{position:relative}
+.ddbtn{width:100%;display:flex;align-items:center;gap:8px;font-size:16px;padding:10px 12px;border:1px solid var(--line);border-radius:10px;background:var(--surface);color:var(--ink);cursor:pointer;text-align:left}
+.ddbtn .chev{margin-left:auto;color:var(--muted);font-size:18px;line-height:1}
+.ddbtn .grp{margin-left:0}
+.ddpanel{position:absolute;z-index:20;top:calc(100% + 6px);left:0;right:0;background:var(--surface);border:1px solid var(--line);border-radius:10px;box-shadow:0 10px 30px rgba(0,0,0,.14);max-height:340px;overflow:auto;padding:8px}
+.ddsearch{width:100%;padding:9px 10px;border:1px solid var(--line);border-radius:8px;background:var(--bg);color:var(--ink);font-size:14px;margin-bottom:4px;position:sticky;top:0}
+.ddhead{font-size:11px;color:var(--faint);letter-spacing:.04em;padding:9px 8px 3px}
+.dditem{display:flex;align-items:center;gap:8px;padding:8px;border-radius:8px;cursor:pointer;font-size:14px}
+.dditem:hover{background:var(--bg)}
+.dditem.sel{background:var(--accent-soft)}
+.dditem .grp{margin-left:auto}
+.posrow{display:flex;flex-wrap:wrap;gap:8px;margin:18px 0 6px}
+.posbtn{flex:1;min-width:60px;display:flex;flex-direction:column;align-items:center;gap:1px;padding:9px 6px;border:1px solid var(--line);border-radius:10px;background:var(--surface);color:var(--ink);cursor:pointer;font-size:14px}
+.posbtn small{font-size:12px;color:var(--muted)}
+.posbtn.active{border-color:var(--accent);background:var(--accent-soft)}
+.posbtn.active small{color:var(--accent)}
+.cap{font-size:14px;margin:16px 0 14px;color:var(--ink);display:flex;align-items:center;gap:4px;flex-wrap:wrap}
+.cap b{font-weight:600}
+.row{display:flex;align-items:center;gap:10px;margin-bottom:8px}
+.nm{width:212px;flex-shrink:0;font-size:13px;display:flex;align-items:center;justify-content:flex-end;gap:0;white-space:nowrap;overflow:hidden}
+.fl{height:13px;width:auto;margin-right:6px;border-radius:2px;vertical-align:-1px;flex-shrink:0}
+.lt{overflow:hidden;text-overflow:ellipsis}
+.grp{font-size:11px;color:var(--faint);margin-left:6px;flex-shrink:0}
+.lnk{cursor:pointer;display:inline-flex;align-items:center;min-width:0}
+.lnk:hover .lt{text-decoration:underline;text-decoration-color:var(--accent)}
+.track{flex:1;background:var(--bg);border-radius:7px;height:22px;overflow:hidden}
+.fill{height:100%;background:var(--accent);border-radius:7px}
+.fill.e{background:var(--elim)}
+.pc{width:50px;flex-shrink:0;font-size:13px;font-weight:600;text-align:right}
+.pc.e{color:var(--faint);font-weight:400}
+.nm.e .lt{color:var(--faint)}
+.muted{color:var(--muted)}
+h2{font-size:17px;font-weight:600;margin:0 0 14px}
+.foot{font-size:12px;color:var(--faint);margin-top:8px;line-height:1.6}
+.mu{display:flex;align-items:center;gap:6px;font-size:14px;padding:7px 0;border-top:1px solid var(--line)}
+.mu:first-child{border-top:none}
+.mu .v{font-weight:600}
+details{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:4px 22px;margin-bottom:16px}
+summary{cursor:pointer;font-weight:600;font-size:15px;padding:14px 0;list-style:none}
+summary::-webkit-details-marker{display:none}
+summary::before{content:"\203A";display:inline-block;margin-right:10px;transition:transform .15s;color:var(--muted)}
+details[open] summary::before{transform:rotate(90deg)}
+details p,details li{font-size:14px;color:var(--ink)}
+details .foot{font-size:12px}
+a{color:var(--accent)}
+.disc{font-size:12px;color:var(--faint);line-height:1.7;border-top:1px solid var(--line);margin-top:8px;padding-top:16px}
+.fixture{font-size:13px;color:var(--muted);background:var(--bg);border:1px solid var(--line);border-radius:9px;padding:8px 12px;margin:0 0 14px;display:none}
+.fixture.show{display:block}
+.fixture b{color:var(--ink);font-weight:600}
+.fxpc{font-weight:600;color:var(--accent);white-space:nowrap}
+.fixture .fxhead{font-weight:600;color:var(--ink);font-size:12px;margin-bottom:5px}
+.mdate{margin-left:auto;font-size:11px;color:var(--faint);margin-right:10px;white-space:nowrap}
+.bwrap{overflow:auto;padding-bottom:8px}
+.bhead{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));column-gap:24px;min-width:940px;margin-bottom:8px}
+.bhead span{font-size:11px;color:var(--faint);text-align:center;font-weight:600}
+.bgrid{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));grid-template-rows:repeat(16,124px);column-gap:24px;min-width:940px}
+.slot{position:relative;display:flex;align-items:center;justify-content:center}
+.mcard,.kocard{width:100%;position:relative;border:1px solid var(--line);border-radius:9px;padding:7px 9px;background:var(--surface)}
+.mcard{cursor:pointer}
+.mcard.sel{border-color:var(--accent);box-shadow:0 0 0 1px var(--accent)}
+.mh{display:flex;align-items:center;font-size:10px;color:var(--faint);margin-bottom:4px;gap:5px}
+.mh .p{margin-left:auto;font-weight:600;color:var(--accent);font-size:11px}
+.mteam{display:flex;align-items:center;gap:6px;font-size:13px;padding:1px 0}
+.mteam .lt{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.msched{font-size:10px;color:var(--muted);margin-top:4px;line-height:1.35}
+.msched div{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.kocard .kh{font-size:10px;color:var(--faint);margin-bottom:3px}
+.kocard .kp{font-size:12px;line-height:1.35}
+.kocard .kvs{font-size:10px;color:var(--faint)}
+.kocard .ks{font-size:10px;color:var(--muted);margin-top:4px}
+.slot.adv::before{content:"";position:absolute;left:-12px;top:25%;height:50%;border-left:1.5px solid var(--line)}
+.slot.adv>.mcard::before,.slot.adv>.kocard::before{content:"";position:absolute;left:-12px;top:50%;width:12px;border-top:1.5px solid var(--line)}
+.slot.fwd::after{content:"";position:absolute;right:-12px;top:50%;width:12px;border-top:1.5px solid var(--line)}
+.modal{position:fixed;inset:0;background:rgba(0,0,0,.45);display:flex;align-items:center;justify-content:center;z-index:50;padding:20px}
+.modal[hidden]{display:none}
+.modal-card{background:var(--surface);border:1px solid var(--line);border-radius:14px;max-width:440px;width:100%;max-height:82vh;overflow:auto;padding:18px 22px;position:relative}
+.modal-x{position:absolute;top:9px;right:12px;border:none;background:transparent;font-size:24px;line-height:1;color:var(--muted);cursor:pointer;padding:2px 6px}
+.msub{font-size:12px;color:var(--faint);margin:2px 0 10px}
+.alt{display:flex;align-items:center;gap:5px;font-size:13px;padding:6px 2px;border-top:1px solid var(--line)}
+.alt:first-child{border-top:none}
+.alt .p{margin-left:auto;font-weight:600}
+.alt .fl{height:12px}
+@media(max-width:560px){
+ .wrap{padding:22px 14px 48px}
+ h1{font-size:19px;gap:8px}
+ h1 img{height:26px;width:26px}
+ .card{padding:16px 15px}
+ details{padding:2px 16px}
+ .nm{width:140px}
+ .grp{display:none}
+ .pc{width:44px}
+ .row{gap:8px}
+ .posbtn{min-width:54px;padding:8px 4px}
+ .mu .grp{display:none}
+}
+</style></head>
+<body><div class="wrap">
+<h1><img src="https://img.icons8.com/color/96/world-cup.png" alt="">World Cup 2026</h1>
+<p class="tsub">Round-of-32 opponent predictions</p>
+<p class="sub">Who will each team face in the round of 32? Pick a team and a finishing position to see every possible opponent and its probability.</p>
+<div class="source">
+  <span class="src-badge">Data: Opta Analyst</span>
+  <span>Every probability here comes directly from the publicly available <a href="https://theanalyst.com/" target="_blank" rel="noopener">Opta Analyst</a> Supercomputer - the same group-stage forecasts Opta publishes. Nothing is re-modelled: the possible opponents are worked out solely by applying FIFA's official round-of-32 bracket to Opta's numbers. <a onclick="var d=document.getElementById('src-details');d.open=true;d.scrollIntoView({behavior:'smooth'})">How it works &rsaquo;</a></span>
+</div>
+<div class="updated">Last updated: 25 June 2026, 23:16 &nbsp;<span style="color:var(--accent);font-weight:600;border:1px solid var(--accent);border-radius:6px;padding:2px 8px;">Frozen snapshot - preserved for portfolio, not updated</span></div>
+
+<div class="card">
+  <label>Select a team</label>
+  <div class="dd" id="dd">
+    <button class="ddbtn" id="ddbtn" aria-haspopup="listbox" aria-expanded="false"></button>
+    <div class="ddpanel" id="ddpanel" hidden>
+      <input class="ddsearch" id="ddsearch" placeholder="Search team..." aria-label="Search team">
+      <div id="ddlist" role="listbox"></div>
+    </div>
+  </div>
+  <div class="posrow" id="posrow"></div>
+  <div class="fixture" id="fixture"></div>
+  <div class="cap" id="cap"></div>
+  <div id="bars"></div>
+  <p class="foot" id="foot"></p>
+</div>
+
+<div class="card">
+  <h2>Most likely knockout bracket</h2>
+  <div class="bwrap">
+    <div class="bhead"><span>Round of 32</span><span>Round of 16</span><span>Quarter-finals</span><span>Semi-finals</span><span>Final</span></div>
+    <div class="bgrid" id="bgrid"></div>
+  </div>
+  <p class="foot">Round-of-32 boxes show each slot's most likely tie and the chance that exact tie occurs - click a box to pop up every possible pairing. Later rounds show how the bracket and schedule progress to the final; the teams there depend on knockout results, which this page does not forecast.</p>
+</div>
+
+<details>
+  <summary>How the round of 32 works</summary>
+  <p>The 48 teams are split into 12 groups (A-L) of four. The top two from every group advance, together with the eight best third-placed teams - 32 teams in all.</p>
+  <p>The eight best third-placed teams are ranked across all groups by: points, then goal difference, then goals scored, then disciplinary record, then drawing of lots.</p>
+  <p>The bracket is partly fixed and partly variable. Four group winners meet a specified runner-up, and the remaining group runners-up meet each other. The other eight group winners each host one of the eight qualifying third-placed teams - but <em>which</em> third a given winner plays depends on which groups the eight qualifying thirds come from. FIFA pre-defines this with a table of 495 possible combinations (Annex C of the tournament regulations), so once the eight thirds are known, every matchup is fixed.</p>
+  <p class="foot">Rules summarised from <a href="https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_knockout_stage" target="_blank" rel="noopener">"2026 FIFA World Cup knockout stage", Wikipedia</a>, available under <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener">CC BY-SA 4.0</a>. Tournament regulations: FIFA.</p>
+</details>
+
+<details id="src-details">
+  <summary>Data, sourcing &amp; disclaimer</summary>
+  <p>The finish-position probabilities (each team's chance of finishing 1st / 2nd / 3rd / 4th in its group, and of qualifying) are sourced from the publicly available <a href="https://theanalyst.com/" target="_blank" rel="noopener">Opta Analyst</a> Supercomputer. No additional predictive modelling has been applied to those numbers.</p>
+  <p>The opponent probabilities shown here are obtained purely by applying FIFA's published round-of-32 bracket rules (above) to Opta's figures - i.e. bracket arithmetic, not a new forecast. The one unavoidable assumption is the <em>joint</em> distribution of which eight third-placed teams qualify together, because Opta publishes only the per-group marginals; this is modelled as independent Bernoulli draws conditioned on exactly eight advancing. Probabilities reflect a single snapshot (28 June 2026) and change as results come in.</p>
+  <p class="disc">Finish-position and qualification data &copy; Stats Perform / Opta. "Opta", "Opta Analyst" and the Opta Supercomputer are trademarks of Stats Perform. This page is an independent, non-commercial, illustrative visualisation and is not affiliated with, endorsed by, or produced by Stats Perform, Opta, FIFA or any national association. Data is used here for personal, non-commercial reference only; all rights in the underlying data remain with their respective owners. Tournament rules text is adapted from Wikipedia under CC BY-SA 4.0. Flag images courtesy of <a href="https://flagcdn.com/" target="_blank" rel="noopener">flagcdn.com</a>; World Cup icon by <a href="https://icons8.com/" target="_blank" rel="noopener">Icons8</a>.</p>
+</details>
+
+<div class="modal" id="modal" hidden>
+  <div class="modal-card">
+    <button class="modal-x" id="modal-x" aria-label="Close">&times;</button>
+    <div id="modal-body"></div>
+  </div>
+</div>
+</div>
+<script>
+const DATA={"Mexico":{"g":"A","pos":{"1st":{"p":1.0,"o":[["Ecuador",0.8207],["Uruguay",0.0701],["Cabo Verde",0.0356],["Scotland",0.0266],["Spain",0.0244],["Saudi Arabia",0.0227]]}}},"South Africa":{"g":"A","pos":{"2nd":{"p":1.0,"o":[["Canada",1.0]]}}},"South Korea":{"g":"A","pos":{"3rd":{"p":1.0,"o":[["Egypt",0.4202],["Eliminated (not best-8 third)",0.267],["Belgium",0.1705],["Germany",0.0712],["Iran",0.0711]]}}},"Czechia":{"g":"A","pos":{"4th":{"p":1.0,"o":[["Eliminated (4th)",1.0]]}}},"Switzerland":{"g":"B","pos":{"1st":{"p":1.0,"o":[["Algeria",0.3572],["Iran",0.1876],["Austria",0.1688],["Egypt",0.1309],["Senegal",0.0527],["Ecuador",0.0494],["Belgium",0.0389],["New Zealand",0.013]]}}},"Canada":{"g":"B","pos":{"2nd":{"p":1.0,"o":[["South Africa",1.0]]}}},"Bosnia":{"g":"B","pos":{"3rd":{"p":1.0,"o":[["USA",0.999],["Germany",0.001]]}}},"Qatar":{"g":"B","pos":{"4th":{"p":1.0,"o":[["Eliminated (4th)",1.0]]}}},"Brazil":{"g":"C","pos":{"1st":{"p":1.0,"o":[["Japan",0.5873],["Netherlands",0.2126],["Sweden",0.2001]]}}},"Morocco":{"g":"C","pos":{"2nd":{"p":1.0,"o":[["Netherlands",0.7803],["Japan",0.1797],["Sweden",0.04]]}}},"Scotland":{"g":"C","pos":{"3rd":{"p":1.0,"o":[["Eliminated (not best-8 third)",0.927],["Germany",0.0381],["Mexico",0.0343]]}}},"Haiti":{"g":"C","pos":{"4th":{"p":1.0,"o":[["Eliminated (4th)",1.0]]}}},"USA":{"g":"D","pos":{"1st":{"p":1.0,"o":[["Bosnia",0.999],["Senegal",0.001]]}}},"Australia":{"g":"D","pos":{"2nd":{"p":0.5671,"o":[["Belgium",0.6084],["Egypt",0.1729],["Iran",0.1628],["New Zealand",0.0559]]},"3rd":{"p":0.4329,"o":[["Germany",0.6476],["Eliminated (not best-8 third)",0.3313],["France",0.0163],["Norway",0.0041]]}}},"Paraguay":{"g":"D","pos":{"2nd":{"p":0.4329,"o":[["Belgium",0.6084],["Egypt",0.1729],["Iran",0.1628],["New Zealand",0.0559]]},"3rd":{"p":0.5671,"o":[["Germany",0.7338],["Eliminated (not best-8 third)",0.2423],["France",0.0185],["Norway",0.0047]]}}},"Turkiye":{"g":"D","pos":{"4th":{"p":1.0,"o":[["Eliminated (4th)",1.0]]}}},"Germany":{"g":"E","pos":{"1st":{"p":1.0,"o":[["Paraguay",0.4257],["Australia",0.2868],["Sweden",0.1342],["South Korea",0.0729],["Japan",0.0485],["Scotland",0.0294],["Netherlands",0.0015],["Bosnia",0.001]]}}},"Cote d'Ivoire":{"g":"E","pos":{"2nd":{"p":1.0,"o":[["Norway",0.7982],["France",0.2018]]}}},"Ecuador":{"g":"E","pos":{"3rd":{"p":1.0,"o":[["Mexico",0.8206],["England",0.0779],["Switzerland",0.0494],["Portugal",0.0143],["Colombia",0.0137],["Croatia",0.0115],["Ghana",0.0059],["Egypt",0.0042],["Belgium",0.0017]]}}},"Curacao":{"g":"E","pos":{"4th":{"p":1.0,"o":[["Eliminated (4th)",1.0]]}}},"Netherlands":{"g":"F","pos":{"1st":{"p":0.7803,"o":[["Morocco",1.0]]},"2nd":{"p":0.2126,"o":[["Brazil",1.0]]},"3rd":{"p":0.0071,"o":[["France",0.6339],["Germany",0.2046],["Norway",0.1603],["Switzerland",0.0013]]}}},"Japan":{"g":"F","pos":{"1st":{"p":0.1797,"o":[["Morocco",1.0]]},"2nd":{"p":0.5874,"o":[["Brazil",1.0]]},"3rd":{"p":0.2329,"o":[["France",0.6339],["Germany",0.2046],["Norway",0.1603],["Switzerland",0.0013]]}}},"Sweden":{"g":"F","pos":{"1st":{"p":0.04,"o":[["Morocco",1.0]]},"2nd":{"p":0.2001,"o":[["Brazil",1.0]]},"3rd":{"p":0.7599,"o":[["France",0.5372],["Germany",0.1734],["Eliminated (not best-8 third)",0.1525],["Norway",0.1358],["Switzerland",0.0011]]}}},"Tunisia":{"g":"F","pos":{"4th":{"p":1.0,"o":[["Eliminated (4th)",1.0]]}}},"Egypt":{"g":"G","pos":{"1st":{"p":0.635,"o":[["South Korea",0.6776],["Senegal",0.1403],["Algeria",0.0589],["Uruguay",0.0403],["Austria",0.0279],["Cabo Verde",0.0204],["Spain",0.014],["Saudi Arabia",0.013],["Ecuador",0.0065]]},"2nd":{"p":0.1729,"o":[["Australia",0.5671],["Paraguay",0.4329]]},"3rd":{"p":0.1921,"o":[["Switzerland",0.6925],["France",0.2454],["Norway",0.062]]}}},"Belgium":{"g":"G","pos":{"1st":{"p":0.2577,"o":[["South Korea",0.6776],["Senegal",0.1403],["Algeria",0.0589],["Uruguay",0.0403],["Austria",0.0279],["Cabo Verde",0.0204],["Spain",0.014],["Saudi Arabia",0.013],["Ecuador",0.0065]]},"2nd":{"p":0.6084,"o":[["Australia",0.5671],["Paraguay",0.4329]]},"3rd":{"p":0.0731,"o":[["Switzerland",0.5409],["Eliminated (not best-8 third)",0.2189],["France",0.1917],["Norway",0.0485]]},"4th":{"p":0.0608,"o":[["Eliminated (4th)",1.0]]}}},"Iran":{"g":"G","pos":{"1st":{"p":0.1074,"o":[["South Korea",0.6776],["Senegal",0.1403],["Algeria",0.0589],["Uruguay",0.0403],["Austria",0.0279],["Cabo Verde",0.0204],["Spain",0.014],["Saudi Arabia",0.013],["Ecuador",0.0065]]},"2nd":{"p":0.1628,"o":[["Australia",0.5671],["Paraguay",0.4329]]},"3rd":{"p":0.6929,"o":[["Eliminated (not best-8 third)",0.6028],["Switzerland",0.2751],["France",0.0975],["Norway",0.0246]]},"4th":{"p":0.0369,"o":[["Eliminated (4th)",1.0]]}}},"New Zealand":{"g":"G","pos":{"2nd":{"p":0.0559,"o":[["Australia",0.5671],["Paraguay",0.4329]]},"3rd":{"p":0.0418,"o":[["Eliminated (not best-8 third)",0.5431],["Switzerland",0.3164],["France",0.1121],["Norway",0.0284]]},"4th":{"p":0.9023,"o":[["Eliminated (4th)",1.0]]}}},"Spain":{"g":"H","pos":{"1st":{"p":0.8394,"o":[["Austria",0.719],["Algeria",0.281]]},"2nd":{"p":0.1012,"o":[["Argentina",1.0]]},"3rd":{"p":0.0594,"o":[["Mexico",0.4515],["France",0.2305],["Egypt",0.1649],["Belgium",0.0669],["Norway",0.0583],["Iran",0.0279]]}}},"Cabo Verde":{"g":"H","pos":{"1st":{"p":0.0304,"o":[["Austria",0.719],["Algeria",0.281]]},"2nd":{"p":0.5252,"o":[["Argentina",1.0]]},"3rd":{"p":0.195,"o":[["Eliminated (not best-8 third)",0.5564],["Mexico",0.2003],["France",0.1023],["Egypt",0.0731],["Belgium",0.0297],["Norway",0.0259],["Iran",0.0124]]},"4th":{"p":0.2494,"o":[["Eliminated (4th)",1.0]]}}},"Uruguay":{"g":"H","pos":{"1st":{"p":0.1302,"o":[["Austria",0.719],["Algeria",0.281]]},"2nd":{"p":0.0738,"o":[["Argentina",1.0]]},"3rd":{"p":0.6841,"o":[["Eliminated (not best-8 third)",0.7506],["Mexico",0.1126],["France",0.0575],["Egypt",0.0411],["Belgium",0.0167],["Norway",0.0145],["Iran",0.007]]},"4th":{"p":0.1119,"o":[["Eliminated (4th)",1.0]]}}},"Saudi Arabia":{"g":"H","pos":{"2nd":{"p":0.2998,"o":[["Argentina",1.0]]},"3rd":{"p":0.0615,"o":[["Mexico",0.4053],["France",0.2069],["Egypt",0.148],["Eliminated (not best-8 third)",0.1024],["Belgium",0.06],["Norway",0.0523],["Iran",0.025]]},"4th":{"p":0.6387,"o":[["Eliminated (4th)",1.0]]}}},"France":{"g":"I","pos":{"1st":{"p":0.7982,"o":[["Sweden",0.5208],["Japan",0.1883],["Iran",0.0833],["Egypt",0.0581],["Uruguay",0.0449],["Cabo Verde",0.0227],["Belgium",0.0173],["Spain",0.0156],["Saudi Arabia",0.0145],["Paraguay",0.0134],["Australia",0.009],["New Zealand",0.0058],["Netherlands",0.0057]]},"2nd":{"p":0.2018,"o":[["Cote d'Ivoire",1.0]]}}},"Norway":{"g":"I","pos":{"1st":{"p":0.2018,"o":[["Sweden",0.5208],["Japan",0.1883],["Iran",0.0833],["Egypt",0.0581],["Uruguay",0.0449],["Cabo Verde",0.0227],["Belgium",0.0173],["Spain",0.0156],["Saudi Arabia",0.0145],["Paraguay",0.0134],["Australia",0.009],["New Zealand",0.0058],["Netherlands",0.0057]]},"2nd":{"p":0.7982,"o":[["Cote d'Ivoire",1.0]]}}},"Senegal":{"g":"I","pos":{"3rd":{"p":0.9213,"o":[["England",0.3771],["Eliminated (not best-8 third)",0.2878],["Egypt",0.0952],["Switzerland",0.0563],["Croatia",0.0559],["Belgium",0.0386],["Ghana",0.0287],["Portugal",0.0221],["Colombia",0.0211],["Iran",0.0161],["USA",0.001]]},"4th":{"p":0.0787,"o":[["Eliminated (4th)",1.0]]}}},"Iraq":{"g":"I","pos":{"3rd":{"p":0.0787,"o":[["Eliminated (not best-8 third)",0.9492],["England",0.0269],["Egypt",0.0068],["Switzerland",0.004],["Croatia",0.004],["Belgium",0.0028],["Ghana",0.002],["Portugal",0.0016],["Colombia",0.0015],["Iran",0.0011]]},"4th":{"p":0.9213,"o":[["Eliminated (4th)",1.0]]}}},"Argentina":{"g":"J","pos":{"1st":{"p":1.0,"o":[["Cabo Verde",0.5252],["Saudi Arabia",0.2998],["Spain",0.1012],["Uruguay",0.0738]]}}},"Austria":{"g":"J","pos":{"2nd":{"p":0.719,"o":[["Spain",0.8394],["Uruguay",0.1302],["Cabo Verde",0.0304]]},"3rd":{"p":0.281,"o":[["Switzerland",0.5892],["Eliminated (not best-8 third)",0.2167],["England",0.075],["Egypt",0.0617],["Belgium",0.0251],["Croatia",0.0111],["Iran",0.0104],["Ghana",0.0057],["Portugal",0.0026],["Colombia",0.0025]]}}},"Algeria":{"g":"J","pos":{"2nd":{"p":0.281,"o":[["Spain",0.8394],["Uruguay",0.1302],["Cabo Verde",0.0304]]},"3rd":{"p":0.719,"o":[["Switzerland",0.4873],["Eliminated (not best-8 third)",0.3522],["England",0.0621],["Egypt",0.0511],["Belgium",0.0207],["Croatia",0.0092],["Iran",0.0086],["Ghana",0.0047],["Portugal",0.0021],["Colombia",0.002]]}}},"Jordan":{"g":"J","pos":{"4th":{"p":1.0,"o":[["Eliminated (4th)",1.0]]}}},"Colombia":{"g":"K","pos":{"1st":{"p":0.4887,"o":[["Ghana",0.5637],["Croatia",0.3562],["Senegal",0.0404],["Ecuador",0.028],["England",0.0061],["Algeria",0.003],["Austria",0.0014]]},"2nd":{"p":0.5113,"o":[["Croatia",0.4407],["Ghana",0.3822],["England",0.1771]]}}},"Portugal":{"g":"K","pos":{"1st":{"p":0.5113,"o":[["Ghana",0.5637],["Croatia",0.3562],["Senegal",0.0404],["Ecuador",0.028],["England",0.0061],["Algeria",0.003],["Austria",0.0014]]},"2nd":{"p":0.4866,"o":[["Croatia",0.4407],["Ghana",0.3822],["England",0.1771]]},"3rd":{"p":0.0021,"o":[["England",0.8168],["Croatia",0.121],["Ghana",0.0622]]}}},"Congo DR":{"g":"K","pos":{"2nd":{"p":0.0022,"o":[["Croatia",0.4407],["Ghana",0.3822],["England",0.1771]]},"3rd":{"p":0.6927,"o":[["England",0.4842],["Eliminated (not best-8 third)",0.4072],["Croatia",0.0717],["Ghana",0.0369]]},"4th":{"p":0.3051,"o":[["Eliminated (4th)",1.0]]}}},"Uzbekistan":{"g":"K","pos":{"3rd":{"p":0.3053,"o":[["Eliminated (not best-8 third)",0.9872],["England",0.0104],["Croatia",0.0015]]},"4th":{"p":0.6947,"o":[["Eliminated (4th)",1.0]]}}},"England":{"g":"L","pos":{"1st":{"p":0.8169,"o":[["Senegal",0.432],["Congo DR",0.3824],["Ecuador",0.0954],["Algeria",0.0557],["Austria",0.0263],["Uzbekistan",0.0036],["Iraq",0.0026],["Portugal",0.002]]},"2nd":{"p":0.1771,"o":[["Colombia",0.5112],["Portugal",0.4866],["Congo DR",0.0022]]},"3rd":{"p":0.006,"o":[["Portugal",0.5113],["Colombia",0.4887]]}}},"Ghana":{"g":"L","pos":{"1st":{"p":0.0622,"o":[["Senegal",0.432],["Congo DR",0.3824],["Ecuador",0.0954],["Algeria",0.0557],["Austria",0.0263],["Uzbekistan",0.0036],["Iraq",0.0026],["Portugal",0.002]]},"2nd":{"p":0.3822,"o":[["Colombia",0.5112],["Portugal",0.4866],["Congo DR",0.0022]]},"3rd":{"p":0.5556,"o":[["Portugal",0.5113],["Colombia",0.4887]]}}},"Croatia":{"g":"L","pos":{"1st":{"p":0.121,"o":[["Senegal",0.432],["Congo DR",0.3824],["Ecuador",0.0954],["Algeria",0.0557],["Austria",0.0263],["Uzbekistan",0.0036],["Iraq",0.0026],["Portugal",0.002]]},"2nd":{"p":0.4407,"o":[["Colombia",0.5112],["Portugal",0.4866],["Congo DR",0.0022]]},"3rd":{"p":0.4383,"o":[["Portugal",0.4096],["Colombia",0.3915],["Eliminated (not best-8 third)",0.199]]}}},"Panama":{"g":"L","pos":{"4th":{"p":1.0,"o":[["Eliminated (4th)",1.0]]}}}};const ISO={"Mexico": "mx", "South Africa": "za", "South Korea": "kr", "Czechia": "cz", "Switzerland": "ch", "Canada": "ca", "Bosnia": "ba", "Qatar": "qa", "Brazil": "br", "Morocco": "ma", "Scotland": "gb-sct", "Haiti": "ht", "USA": "us", "Australia": "au", "Paraguay": "py", "Turkiye": "tr", "Germany": "de", "Cote d'Ivoire": "ci", "Ecuador": "ec", "Curacao": "cw", "Netherlands": "nl", "Japan": "jp", "Sweden": "se", "Tunisia": "tn", "Egypt": "eg", "Belgium": "be", "Iran": "ir", "New Zealand": "nz", "Spain": "es", "Cabo Verde": "cv", "Uruguay": "uy", "Saudi Arabia": "sa", "France": "fr", "Norway": "no", "Senegal": "sn", "Iraq": "iq", "Argentina": "ar", "Austria": "at", "Algeria": "dz", "Jordan": "jo", "Colombia": "co", "Portugal": "pt", "Congo DR": "cd", "Uzbekistan": "uz", "England": "gb-eng", "Ghana": "gh", "Croatia": "hr", "Panama": "pa"};const GRP={"Mexico": "A", "South Africa": "A", "South Korea": "A", "Czechia": "A", "Switzerland": "B", "Canada": "B", "Bosnia": "B", "Qatar": "B", "Brazil": "C", "Morocco": "C", "Scotland": "C", "Haiti": "C", "USA": "D", "Australia": "D", "Paraguay": "D", "Turkiye": "D", "Germany": "E", "Cote d'Ivoire": "E", "Ecuador": "E", "Curacao": "E", "Netherlands": "F", "Japan": "F", "Sweden": "F", "Tunisia": "F", "Egypt": "G", "Belgium": "G", "Iran": "G", "New Zealand": "G", "Spain": "H", "Cabo Verde": "H", "Uruguay": "H", "Saudi Arabia": "H", "France": "I", "Norway": "I", "Senegal": "I", "Iraq": "I", "Argentina": "J", "Austria": "J", "Algeria": "J", "Jordan": "J", "Colombia": "K", "Portugal": "K", "Congo DR": "K", "Uzbekistan": "K", "England": "L", "Ghana": "L", "Croatia": "L", "Panama": "L"};const BRACKET=[{"n": "73", "slot": "2A v 2B", "pairs": [["South Africa", "Canada", 1.0]]}, {"n": "74", "slot": "1E v 3rd A/B/C/D/F", "pairs": [["Germany", "Paraguay", 0.4257], ["Germany", "Australia", 0.2868], ["Germany", "Sweden", 0.1342], ["Germany", "South Korea", 0.0729], ["Germany", "Japan", 0.0485], ["Germany", "Scotland", 0.0294]]}, {"n": "75", "slot": "1F v 2C", "pairs": [["Netherlands", "Morocco", 0.7803], ["Japan", "Morocco", 0.1797], ["Sweden", "Morocco", 0.04]]}, {"n": "76", "slot": "1C v 2F", "pairs": [["Brazil", "Japan", 0.5874], ["Brazil", "Netherlands", 0.2126], ["Brazil", "Sweden", 0.2001]]}, {"n": "77", "slot": "1I v 3rd C/D/F/G/H", "pairs": [["France", "Sweden", 0.4157], ["France", "Japan", 0.1503], ["Norway", "Sweden", 0.1051], ["France", "Iran", 0.0665], ["France", "Egypt", 0.0464], ["Norway", "Japan", 0.038], ["France", "Uruguay", 0.0358], ["France", "Cabo Verde", 0.0182], ["Norway", "Iran", 0.0168], ["France", "Belgium", 0.0138], ["France", "Spain", 0.0125], ["Norway", "Egypt", 0.0117]]}, {"n": "78", "slot": "2E v 2I", "pairs": [["Cote d'Ivoire", "Norway", 0.7982], ["Cote d'Ivoire", "France", 0.2018]]}, {"n": "79", "slot": "1A v 3rd C/E/F/H/I", "pairs": [["Mexico", "Ecuador", 0.8207], ["Mexico", "Uruguay", 0.0701], ["Mexico", "Cabo Verde", 0.0356], ["Mexico", "Scotland", 0.0266], ["Mexico", "Spain", 0.0244], ["Mexico", "Saudi Arabia", 0.0227]]}, {"n": "80", "slot": "1L v 3rd E/H/I/J/K", "pairs": [["England", "Senegal", 0.3529], ["England", "Congo DR", 0.3123], ["England", "Ecuador", 0.0779], ["Croatia", "Senegal", 0.0523], ["Croatia", "Congo DR", 0.0463], ["England", "Algeria", 0.0455], ["Ghana", "Senegal", 0.0269], ["Ghana", "Congo DR", 0.0238], ["England", "Austria", 0.0215], ["Croatia", "Ecuador", 0.0115], ["Croatia", "Algeria", 0.0067], ["Ghana", "Ecuador", 0.0059]]}, {"n": "81", "slot": "1D v 3rd B/E/F/I/J", "pairs": [["USA", "Bosnia", 0.999]]}, {"n": "82", "slot": "1G v 3rd A/E/H/I/J", "pairs": [["Egypt", "South Korea", 0.4303], ["Belgium", "South Korea", 0.1746], ["Egypt", "Senegal", 0.0891], ["Iran", "South Korea", 0.0728], ["Egypt", "Algeria", 0.0374], ["Belgium", "Senegal", 0.0362], ["Egypt", "Uruguay", 0.0256], ["Egypt", "Austria", 0.0177], ["Belgium", "Algeria", 0.0152], ["Iran", "Senegal", 0.0151], ["Egypt", "Cabo Verde", 0.013], ["Belgium", "Uruguay", 0.0104]]}, {"n": "83", "slot": "2K v 2L", "pairs": [["Colombia", "Croatia", 0.2253], ["Portugal", "Croatia", 0.2144], ["Colombia", "Ghana", 0.1954], ["Portugal", "Ghana", 0.186], ["Colombia", "England", 0.0906], ["Portugal", "England", 0.0862]]}, {"n": "84", "slot": "1H v 2J", "pairs": [["Spain", "Austria", 0.6035], ["Spain", "Algeria", 0.2359], ["Uruguay", "Austria", 0.0936], ["Uruguay", "Algeria", 0.0366], ["Cabo Verde", "Austria", 0.0219], ["Cabo Verde", "Algeria", 0.0085]]}, {"n": "85", "slot": "1B v 3rd E/F/G/I/J", "pairs": [["Switzerland", "Algeria", 0.3572], ["Switzerland", "Iran", 0.1876], ["Switzerland", "Austria", 0.1688], ["Switzerland", "Egypt", 0.1309], ["Switzerland", "Senegal", 0.0527], ["Switzerland", "Ecuador", 0.0494], ["Switzerland", "Belgium", 0.0389], ["Switzerland", "New Zealand", 0.013]]}, {"n": "86", "slot": "1J v 2H", "pairs": [["Argentina", "Cabo Verde", 0.5252], ["Argentina", "Saudi Arabia", 0.2998], ["Argentina", "Spain", 0.1012], ["Argentina", "Uruguay", 0.0738]]}, {"n": "87", "slot": "1K v 3rd D/E/I/J/L", "pairs": [["Portugal", "Ghana", 0.2882], ["Colombia", "Ghana", 0.2755], ["Portugal", "Croatia", 0.1821], ["Colombia", "Croatia", 0.1741], ["Portugal", "Senegal", 0.0207], ["Colombia", "Senegal", 0.0198], ["Portugal", "Ecuador", 0.0143], ["Colombia", "Ecuador", 0.0137], ["Portugal", "England", 0.0031], ["Colombia", "England", 0.003]]}, {"n": "88", "slot": "2D v 2G", "pairs": [["Australia", "Belgium", 0.345], ["Paraguay", "Belgium", 0.2634], ["Australia", "Egypt", 0.0981], ["Australia", "Iran", 0.0923], ["Paraguay", "Egypt", 0.0748], ["Paraguay", "Iran", 0.0705], ["Australia", "New Zealand", 0.0317], ["Paraguay", "New Zealand", 0.0242]]}];const SCHED={"73": ["Sun 28 June", "8:00 pm BST", "Inglewood"], "74": ["Mon 29 June", "9:30 pm BST", "Foxborough"], "75": ["Tue 30 June", "2:00 am BST", "Guadalupe"], "76": ["Mon 29 June", "6:00 pm BST", "Houston"], "77": ["Tue 30 June", "10:00 pm BST", "East Rutherford"], "78": ["Tue 30 June", "6:00 pm BST", "Arlington"], "79": ["Wed 1 July", "2:00 am BST", "Mexico City"], "80": ["Wed 1 July", "5:00 pm BST", "Atlanta"], "81": ["Thu 2 July", "1:00 am BST", "Santa Clara"], "82": ["Wed 1 July", "9:00 pm BST", "Seattle"], "83": ["Fri 3 July", "12:00 am BST", "Toronto"], "84": ["Thu 2 July", "8:00 pm BST", "Inglewood"], "85": ["Fri 3 July", "4:00 am BST", "Vancouver"], "86": ["Fri 3 July", "11:00 pm BST", "Miami Gardens"], "87": ["Sat 4 July", "2:30 am BST", "Kansas City"], "88": ["Fri 3 July", "7:00 pm BST", "Arlington"], "89": ["Sat 4 July", "10:00 pm BST", "Philadelphia"], "90": ["Sat 4 July", "6:00 pm BST", "Houston"], "91": ["Sun 5 July", "9:00 pm BST", "East Rutherford"], "92": ["Mon 6 July", "1:00 am BST", "Mexico City"], "93": ["Mon 6 July", "8:00 pm BST", "Arlington"], "94": ["Tue 7 July", "1:00 am BST", "Seattle"], "95": ["Tue 7 July", "5:00 pm BST", "Atlanta"], "96": ["Tue 7 July", "9:00 pm BST", "Vancouver"], "97": ["Thu 9 July", "9:00 pm BST", "Foxborough"], "98": ["Fri 10 July", "8:00 pm BST", "Inglewood"], "99": ["Sat 11 July", "10:00 pm BST", "Miami Gardens"], "100": ["Sun 12 July", "2:00 am BST", "Kansas City"], "101": ["Tue 14 July", "8:00 pm BST", "Arlington"], "102": ["Wed 15 July", "8:00 pm BST", "Atlanta"], "104": ["Sun 19 July", "", "East Rutherford"]};const POSMATCH={"1": {"A": 79, "B": 85, "C": 76, "D": 81, "E": 74, "F": 75, "G": 82, "H": 84, "I": 77, "J": 86, "K": 87, "L": 80}, "2": {"A": 73, "B": 73, "C": 75, "D": 88, "E": 78, "F": 76, "G": 88, "H": 86, "I": 78, "J": 84, "K": 83, "L": 83}, "3": {"K": 80, "L": 87}};const R32ORDER=[74, 77, 73, 75, 83, 84, 81, 82, 76, 78, 79, 80, 86, 88, 85, 87];const KOR=[{"name": "Round of 16", "col": 2, "matches": [[89, 74, 77], [90, 73, 75], [93, 83, 84], [94, 81, 82], [91, 76, 78], [92, 79, 80], [95, 86, 88], [96, 85, 87]]}, {"name": "Quarter-final", "col": 3, "matches": [[97, 89, 90], [98, 93, 94], [99, 91, 92], [100, 95, 96]]}, {"name": "Semi-final", "col": 4, "matches": [[101, 97, 98], [102, 99, 100]]}, {"name": "Final", "col": 5, "matches": [[104, 101, 102]]}];const G3RD={"A": [[82, 0.9029], [74, 0.0971]], "B": [[81, 0.999], [74, 0.001]], "C": [[74, 0.5214], [79, 0.4705], [77, 0.0081]], "D": [[74, 0.9684], [77, 0.0305], [87, 0.001]], "E": [[79, 0.8207], [80, 0.0954], [85, 0.0494], [87, 0.028], [82, 0.0065]], "F": [[77, 0.7941], [74, 0.2046], [85, 0.0013]], "G": [[85, 0.6925], [77, 0.3075]], "H": [[79, 0.4516], [77, 0.2888], [82, 0.2596]], "I": [[80, 0.6482], [82, 0.2106], [85, 0.0791], [87, 0.0607], [81, 0.0014]], "J": [[85, 0.7522], [82, 0.1241], [80, 0.1173], [87, 0.0064]], "K": [[80, 1.0]], "L": [[87, 1.0]]};
+const ORDER=['1st','2nd','3rd','4th'];
+const fl=n=>ISO[n]?('<img class="fl" loading="lazy" alt="" src="https://flagcdn.com/h24/'+ISO[n]+'.png">'):'';
+const gtag=n=>GRP[n]?('<span class="grp">Group '+GRP[n]+'</span>'):'';
+const isE=n=>n.indexOf('Eliminated')===0;
+const pct=v=>(v*100).toFixed(1)+'%';
+let team='England',view='overall';
+const bg={};Object.keys(DATA).forEach(t=>{(bg[DATA[t].g]=bg[DATA[t].g]||[]).push(t);});
+const ddbtn=document.getElementById('ddbtn'),ddpanel=document.getElementById('ddpanel'),
+ ddlist=document.getElementById('ddlist'),ddsearch=document.getElementById('ddsearch');
+function updateTrigger(){ddbtn.innerHTML=fl(team)+'<span class="lt">'+team+'</span><span class="grp">Group '+DATA[team].g+'</span><span class="chev">›</span>';}
+function buildList(q){q=(q||'').toLowerCase();ddlist.innerHTML='';
+ Object.keys(bg).sort().forEach(g=>{const items=bg[g].slice().sort().filter(t=>t.toLowerCase().includes(q));
+  if(!items.length)return;const h=document.createElement('div');h.className='ddhead';h.textContent='Group '+g;ddlist.appendChild(h);
+  items.forEach(t=>{const it=document.createElement('div');it.className='dditem'+(t===team?' sel':'');it.setAttribute('role','option');
+   it.innerHTML=fl(t)+'<span class="lt">'+t+'</span><span class="grp">Group '+g+'</span>';it.onclick=()=>{closeDD();go(t);};ddlist.appendChild(it);});});}
+function openDD(){ddpanel.hidden=false;ddbtn.setAttribute('aria-expanded','true');ddsearch.value='';buildList('');ddsearch.focus();}
+function closeDD(){ddpanel.hidden=true;ddbtn.setAttribute('aria-expanded','false');}
+ddbtn.onclick=()=>{ddpanel.hidden?openDD():closeDD();};
+ddsearch.oninput=()=>buildList(ddsearch.value);
+document.addEventListener('click',e=>{if(!document.getElementById('dd').contains(e.target))closeDD();});
+function go(name){if(!DATA[name])return;team=name;if(view!=='overall'&&!DATA[team].pos[view])view='overall';updateTrigger();render();window.scrollTo({top:0,behavior:'smooth'});}
+updateTrigger();
+function overall(t){const a={};const P=DATA[t].pos;for(const p in P){for(const x of P[p].o){const n=x[0],c=x[1];const k=isE(n)?'Eliminated (no round of 32)':n;a[k]=(a[k]||0)+P[p].p*c;}}return Object.entries(a).sort((x,y)=>y[1]-x[1]);}
+function teamSpan(n){if(isE(n))return '<span class="lt">'+n+'</span>';
+ return '<span class="lnk" data-team="'+n+'">'+fl(n)+'<span class="lt">'+n+'</span>'+gtag(n)+'</span>';}
+function render(){
+ const P=DATA[team].pos;
+ const pr=document.getElementById('posrow');pr.innerHTML='';
+ const views=[['overall','Overall',null]].concat(ORDER.filter(p=>P[p]).map(p=>[p,p,P[p].p]));
+ views.forEach(v=>{const b=document.createElement('button');b.className='posbtn'+(view===v[0]?' active':'');
+  b.innerHTML='<span>'+v[1]+'</span><small>'+(v[2]!=null?pct(v[2]):'all')+'</small>';b.onclick=()=>{view=v[0];render();};pr.appendChild(b);});
+ let list,cap;
+ if(view==='overall'){list=overall(team);cap='<span class="muted">Across all scenarios,</span> '+'<b>'+team+'</b> <span class="muted">would face:</span>';}
+ else{list=P[view].o.map(x=>[isE(x[0])?(x[0].indexOf('4th')>=0?'Eliminated - finished 4th':'Eliminated - not a top-8 third'):x[0],x[1]]);
+  cap='<span class="muted">If</span> '+'<b>'+team+'</b> <span class="muted">finish</span> <b>'+view+'</b> <span class="muted">('+pct(P[view].p)+' likely), their opponent:</span>';}
+ document.getElementById('cap').innerHTML=cap;
+ const fx=document.getElementById('fixture'),g=DATA[team].g;
+ function fmtMatch(mn){const s=SCHED[mn];return 'Match '+mn+' &middot; '+s[0]+(s[1]?', '+s[1]:'')+' &middot; '+s[2];}
+ function fxline(p){
+  if(p==='1st'||p==='2nd'){const mn=POSMATCH[p[0]]&&POSMATCH[p[0]][g];return mn?fmtMatch(mn):null;}
+  if(p==='3rd'){const arr=(G3RD[g]||[]).filter(o=>o[1]>=0.005);if(!arr.length)return null;
+   if(arr.length===1||arr[0][1]>=0.995)return fmtMatch(arr[0][0]);
+   return 'one of <span class="muted">(if among the 8 best thirds)</span>:<br>'
+    +arr.map(o=>'&nbsp;&nbsp;&bull; '+fmtMatch(o[0])+' <span class="fxpc">('+pct(o[1])+' probability)</span>').join('<br>');}
+  return null;}
+ if(view==='overall'){
+  let lines=[];['1st','2nd','3rd'].forEach(p=>{if(P[p]){const l=fxline(p);if(l)lines.push('<b>'+p+'</b> <span class="fxpc">('+pct(P[p].p)+' probability)</span> '+l);}});
+  if(lines.length){fx.className='fixture show';fx.innerHTML='<div class="fxhead">Possible fixtures by finishing position</div>'+lines.join('<br>');}
+  else{fx.className='fixture';fx.innerHTML='';}}
+ else{const l=fxline(view);
+  if(l){fx.className='fixture show';fx.innerHTML='Fixture: '+l;}
+  else{fx.className='fixture';fx.innerHTML='';}}
+ const max=Math.max.apply(null,list.map(x=>x[1]));
+ const bars=document.getElementById('bars');bars.innerHTML='';
+ list.forEach(it=>{const n=it[0],v=it[1],e=isE(n);const r=document.createElement('div');r.className='row';
+  r.innerHTML='<div class="nm'+(e?' e':'')+'">'+teamSpan(n)+'</div>'
+   +'<div class="track"><div class="fill'+(e?' e':'')+'" style="width:'+Math.max(v/max*100,1.5)+'%"></div></div>'
+   +'<div class="pc'+(e?' e':'')+'">'+pct(v)+'</div>';bars.appendChild(r);});
+ document.getElementById('foot').innerHTML='Toggle a finishing position to condition the list; the % on each toggle is the chance of finishing there. Click any opponent to jump to it.';
+}
+document.body.addEventListener('click',e=>{const el=e.target.closest('[data-team]');if(el)go(el.getAttribute('data-team'));});
+render();
+const BR={};BRACKET.forEach(m=>BR[m.n]=m);
+const SPAN={2:2,3:4,4:8,5:16};
+const bgrid=document.getElementById('bgrid');
+const modal=document.getElementById('modal'),modalBody=document.getElementById('modal-body');
+function showDetail(n){const mt=BR[n];if(!mt)return;
+ let h='<div class="ddhead">Match '+n+' &middot; '+mt.slot+'</div><div class="msub">Every possible tie, by likelihood</div>';
+ mt.pairs.forEach(p=>{h+='<div class="alt">'+fl(p[0])+'<span class="lt">'+p[0]+'</span> <span class="muted">v</span> '+fl(p[1])+'<span class="lt">'+p[1]+'</span><span class="p">'+pct(p[2])+'</span></div>';});
+ modalBody.innerHTML=h;modal.hidden=false;}
+function closeModal(){modal.hidden=true;}
+document.getElementById('modal-x').onclick=closeModal;
+modal.addEventListener('click',e=>{if(e.target===modal)closeModal();});
+document.addEventListener('keydown',e=>{if(e.key==='Escape')closeModal();});
+R32ORDER.forEach((n,i)=>{const mt=BR[n],top=(mt&&mt.pairs[0])||['TBD','TBD',0],s=SCHED[n];
+ const slot=document.createElement('div');slot.className='slot fwd';slot.style.gridColumn=1;slot.style.gridRow=''+(i+1);
+ const c=document.createElement('div');c.className='mcard';c.id='slot'+n;
+ c.innerHTML='<div class="mh"><span>M'+n+'</span><span class="p">'+pct(top[2])+'</span></div>'
+  +'<div class="mteam">'+fl(top[0])+'<span class="lt">'+top[0]+'</span></div>'
+  +'<div class="mteam">'+fl(top[1])+'<span class="lt">'+top[1]+'</span></div>'
+  +(s?'<div class="msched"><div>'+s[0]+(s[1]?', '+s[1]:'')+'</div><div>'+s[2]+'</div></div>':'');
+ c.addEventListener('click',()=>showDetail(n));slot.appendChild(c);bgrid.appendChild(slot);});
+KOR.forEach(rd=>{const span=SPAN[rd.col];rd.matches.forEach((m,i)=>{const n=m[0],s=SCHED[n];
+ const slot=document.createElement('div');slot.className='slot adv'+(rd.col<5?' fwd':'');
+ slot.style.gridColumn=rd.col;slot.style.gridRow=(i*span+1)+' / span '+span;
+ const c=document.createElement('div');c.className='kocard';
+ c.innerHTML='<div class="kh">'+rd.name+' &middot; M'+n+'</div>'
+  +'<div class="kp"><span class="muted">Winner M'+m[1]+'</span><div class="kvs">v</div><span class="muted">Winner M'+m[2]+'</span></div>'
+  +(s?'<div class="ks">'+s[0]+(s[1]?', '+s[1]:'')+' &middot; '+s[2]+'</div>':'');
+ slot.appendChild(c);bgrid.appendChild(slot);});});
+</script></body></html>
