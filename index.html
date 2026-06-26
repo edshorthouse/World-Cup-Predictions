@@ -212,7 +212,7 @@ function render(){
   b.innerHTML='<span>'+v[1]+'</span><small>'+(v[2]!=null?pct(v[2]):'all')+'</small>';b.onclick=()=>{view=v[0];render();};pr.appendChild(b);});
  let list,cap;
  if(view==='overall'){list=overall(team);cap='<span class="muted">Across all scenarios,</span> '+'<b>'+team+'</b> <span class="muted">would face:</span>';}
- else{list=P[view].o.map(x=>[isE(x[0])?(x[0].indexOf('4th')>=0?'Eliminated - finished 4th':'Eliminated - not a top-8 third'):x[0],x[1]]);
+ else{list=P[view].o.map(x=>[isE(x[0])?'Eliminated':x[0],x[1]]);
   cap='<span class="muted">If</span> '+'<b>'+team+'</b> <span class="muted">finish</span> <b>'+view+'</b> <span class="muted">('+pct(P[view].p)+' likely), their opponent:</span>';}
  document.getElementById('cap').innerHTML=cap;
  const fx=document.getElementById('fixture'),g=DATA[team].g;
