@@ -7,9 +7,9 @@ from itertools import combinations
 QUAL = {'France':1,'Argentina':1,'Spain':1,'England':1,'Germany':1,'Brazil':1,'Portugal':1,'Netherlands':1,
 'Norway':1,'USA':1,'Colombia':1,'Mexico':1,'Switzerland':1,'Morocco':1,'Japan':1,'Canada':1,
 'Egypt':1,'Ecuador':1,'Australia':1,'Sweden':1,'Bosnia':1,"Cote d'Ivoire":1,'South Africa':1,
-'Belgium':.9216,'Croatia':.8907,'Ghana':.9996,'Austria':.9036,'Paraguay':.9985,'Algeria':.7465,
-'Senegal':.569,'Iran':.55,'South Korea':.5324,'Cabo Verde':.6395,'Congo DR':.4116,'Saudi Arabia':.3459,
-'Uruguay':.3641,'New Zealand':.07,'Scotland':.0524,'Iraq':.0028,'Uzbekistan':.002,
+'Belgium':.9027,'Croatia':.8710,'Ghana':.9995,'Austria':.8660,'Paraguay':.9978,'Algeria':.7227,
+'Senegal':.9411,'Iran':.4840,'South Korea':.3605,'Cabo Verde':.6309,'Congo DR':.4159,'Saudi Arabia':.3394,
+'Uruguay':.3772,'New Zealand':.0776,'Scotland':.0125,'Iraq':0,'Uzbekistan':.0012,
 'Czechia':0,'Qatar':0,'Haiti':0,'Turkiye':0,'Tunisia':0,'Jordan':0,'Panama':0,'Curacao':0}
 
 # match -> (month, day, hour24, minute, UTC offset, venue) in venue-local time
@@ -361,7 +361,7 @@ def main():
     GRPS = list('ABCDEFGHIJKL')
     # Completed-group thirds, best->worst; advancing subset must be a top-down
     # prefix (mirrors opponent_matrix_exact.py). [] disables pruning.
-    LOCKED = ['F', 'E', 'B', 'D', 'A', 'C']  # Swe, Ecu, Bos, Par, Kor, Sco
+    LOCKED = ['F', 'E', 'B', 'D', 'I', 'A', 'C']  # Swe, Ecu, Bos, Par, Sen, Kor, Sco
     def _locked_ok(S):
         out = False
         for g in LOCKED:

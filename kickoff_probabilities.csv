@@ -1,113 +1,106 @@
 team,group,match,date,kickoff_time,venue,probability
-Algeria,J,80,Wed 1 July,12:00 pm (UTC-04),Atlanta,0.0755
-Algeria,J,82,Wed 1 July,1:00 pm (UTC-07),Seattle,0.1515
-Algeria,J,84,Thu 2 July,12:00 pm (UTC-07),Inglewood,0.269
-Algeria,J,85,Thu 2 July,8:00 pm (UTC-07),Vancouver,0.2452
-Algeria,J,87,Fri 3 July,8:30 pm (UTC-05),Kansas City,0.0053
-Algeria,J,,Eliminated in groups,,,0.2535
+Algeria,J,80,Wed 1 July,12:00 pm (UTC-04),Atlanta,0.0104
+Algeria,J,82,Wed 1 July,1:00 pm (UTC-07),Seattle,0.1574
+Algeria,J,84,Thu 2 July,12:00 pm (UTC-07),Inglewood,0.2687
+Algeria,J,85,Thu 2 July,8:00 pm (UTC-07),Vancouver,0.2862
+Algeria,J,,Eliminated in groups,,,0.2773
 Argentina,J,86,Fri 3 July,6:00 pm (UTC-04),Miami Gardens,1.0
 Australia,D,88,Fri 3 July,1:00 pm (UTC-05),Arlington,1.0
-Austria,J,80,Wed 1 July,12:00 pm (UTC-04),Atlanta,0.0273
-Austria,J,82,Wed 1 July,1:00 pm (UTC-07),Seattle,0.0548
-Austria,J,84,Thu 2 July,12:00 pm (UTC-07),Inglewood,0.731
-Austria,J,85,Thu 2 July,8:00 pm (UTC-07),Vancouver,0.0886
-Austria,J,87,Fri 3 July,8:30 pm (UTC-05),Kansas City,0.0019
-Austria,J,,Eliminated in groups,,,0.0964
-Belgium,G,82,Wed 1 July,1:00 pm (UTC-07),Seattle,0.2741
-Belgium,G,85,Thu 2 July,8:00 pm (UTC-07),Vancouver,0.0544
-Belgium,G,88,Fri 3 July,1:00 pm (UTC-05),Arlington,0.5931
-Belgium,G,,Eliminated in groups,,,0.0784
+Austria,J,80,Wed 1 July,12:00 pm (UTC-04),Atlanta,0.0031
+Austria,J,82,Wed 1 July,1:00 pm (UTC-07),Seattle,0.0467
+Austria,J,84,Thu 2 July,12:00 pm (UTC-07),Inglewood,0.7313
+Austria,J,85,Thu 2 July,8:00 pm (UTC-07),Vancouver,0.0849
+Austria,J,,Eliminated in groups,,,0.134
+Belgium,G,82,Wed 1 July,1:00 pm (UTC-07),Seattle,0.2683
+Belgium,G,85,Thu 2 July,8:00 pm (UTC-07),Vancouver,0.039
+Belgium,G,88,Fri 3 July,1:00 pm (UTC-05),Arlington,0.5954
+Belgium,G,,Eliminated in groups,,,0.0973
 Bosnia,B,81,Wed 1 July,5:00 pm (UTC-07),Santa Clara,1.0
 Brazil,C,76,Mon 29 June,12:00 pm (UTC-05),Houston,1.0
-Cabo Verde,H,79,Tue 30 June,7:00 pm (UTC-06),Mexico City,0.0451
-Cabo Verde,H,82,Wed 1 July,1:00 pm (UTC-07),Seattle,0.0341
-Cabo Verde,H,84,Thu 2 July,12:00 pm (UTC-07),Inglewood,0.027
-Cabo Verde,H,86,Fri 3 July,6:00 pm (UTC-04),Miami Gardens,0.5333
-Cabo Verde,H,,Eliminated in groups,,,0.3605
+Cabo Verde,H,79,Tue 30 June,7:00 pm (UTC-06),Mexico City,0.0169
+Cabo Verde,H,82,Wed 1 July,1:00 pm (UTC-07),Seattle,0.0522
+Cabo Verde,H,84,Thu 2 July,12:00 pm (UTC-07),Inglewood,0.0354
+Cabo Verde,H,86,Fri 3 July,6:00 pm (UTC-04),Miami Gardens,0.5264
+Cabo Verde,H,,Eliminated in groups,,,0.3691
 Canada,B,73,Sun 28 June,12:00 pm (UTC-07),Inglewood,1.0
-Colombia,K,83,Thu 2 July,7:00 pm (UTC-04),Toronto,0.5053
-Colombia,K,87,Fri 3 July,8:30 pm (UTC-05),Kansas City,0.4947
-Congo DR,K,80,Wed 1 July,12:00 pm (UTC-04),Atlanta,0.4094
-Congo DR,K,83,Thu 2 July,7:00 pm (UTC-04),Toronto,0.0022
-Congo DR,K,,Eliminated in groups,,,0.5884
+Colombia,K,83,Thu 2 July,7:00 pm (UTC-04),Toronto,0.5037
+Colombia,K,87,Fri 3 July,8:30 pm (UTC-05),Kansas City,0.4963
+Congo DR,K,80,Wed 1 July,12:00 pm (UTC-04),Atlanta,0.4139
+Congo DR,K,83,Thu 2 July,7:00 pm (UTC-04),Toronto,0.002
+Congo DR,K,,Eliminated in groups,,,0.5841
 Cote d'Ivoire,E,78,Tue 30 June,12:00 pm (UTC-05),Arlington,1.0
-Croatia,L,80,Wed 1 July,12:00 pm (UTC-04),Atlanta,0.1056
-Croatia,L,83,Thu 2 July,7:00 pm (UTC-04),Toronto,0.4607
-Croatia,L,87,Fri 3 July,8:30 pm (UTC-05),Kansas City,0.3244
-Croatia,L,,Eliminated in groups,,,0.1093
+Croatia,L,80,Wed 1 July,12:00 pm (UTC-04),Atlanta,0.106
+Croatia,L,83,Thu 2 July,7:00 pm (UTC-04),Toronto,0.4574
+Croatia,L,87,Fri 3 July,8:30 pm (UTC-05),Kansas City,0.3076
+Croatia,L,,Eliminated in groups,,,0.129
 Curacao,E,,Eliminated in groups,,,1
 Czechia,A,,Eliminated in groups,,,1
-Ecuador,E,79,Tue 30 June,7:00 pm (UTC-06),Mexico City,0.8025
-Ecuador,E,80,Wed 1 July,12:00 pm (UTC-04),Atlanta,0.1128
-Ecuador,E,85,Thu 2 July,8:00 pm (UTC-07),Vancouver,0.0504
-Ecuador,E,87,Fri 3 July,8:30 pm (UTC-05),Kansas City,0.0342
-Egypt,G,82,Wed 1 July,1:00 pm (UTC-07),Seattle,0.6123
-Egypt,G,85,Thu 2 July,8:00 pm (UTC-07),Vancouver,0.2122
-Egypt,G,88,Fri 3 July,1:00 pm (UTC-05),Arlington,0.1754
-England,L,80,Wed 1 July,12:00 pm (UTC-04),Atlanta,0.8461
-England,L,83,Thu 2 July,7:00 pm (UTC-04),Toronto,0.1506
-England,L,87,Fri 3 July,8:30 pm (UTC-05),Kansas City,0.0033
-France,I,77,Tue 30 June,5:00 pm (UTC-04),East Rutherford,0.7994
-France,I,78,Tue 30 June,12:00 pm (UTC-05),Arlington,0.2006
+Ecuador,E,79,Tue 30 June,7:00 pm (UTC-06),Mexico City,0.9203
+Ecuador,E,80,Wed 1 July,12:00 pm (UTC-04),Atlanta,0.0056
+Ecuador,E,85,Thu 2 July,8:00 pm (UTC-07),Vancouver,0.0461
+Ecuador,E,87,Fri 3 July,8:30 pm (UTC-05),Kansas City,0.0281
+Egypt,G,82,Wed 1 July,1:00 pm (UTC-07),Seattle,0.6226
+Egypt,G,85,Thu 2 July,8:00 pm (UTC-07),Vancouver,0.1986
+Egypt,G,88,Fri 3 July,1:00 pm (UTC-05),Arlington,0.1788
+England,L,80,Wed 1 July,12:00 pm (UTC-04),Atlanta,0.8386
+England,L,83,Thu 2 July,7:00 pm (UTC-04),Toronto,0.1574
+England,L,87,Fri 3 July,8:30 pm (UTC-05),Kansas City,0.004
+France,I,77,Tue 30 June,5:00 pm (UTC-04),East Rutherford,1.0
 Germany,E,74,Mon 29 June,4:30 pm (UTC-04),Foxborough,1.0
-Ghana,L,80,Wed 1 July,12:00 pm (UTC-04),Atlanta,0.0483
-Ghana,L,83,Thu 2 July,7:00 pm (UTC-04),Toronto,0.3887
-Ghana,L,87,Fri 3 July,8:30 pm (UTC-05),Kansas City,0.5626
+Ghana,L,80,Wed 1 July,12:00 pm (UTC-04),Atlanta,0.0554
+Ghana,L,83,Thu 2 July,7:00 pm (UTC-04),Toronto,0.3852
+Ghana,L,87,Fri 3 July,8:30 pm (UTC-05),Kansas City,0.5589
+Ghana,L,,Eliminated in groups,,,0.0005
 Haiti,C,,Eliminated in groups,,,1
-Iran,G,82,Wed 1 July,1:00 pm (UTC-07),Seattle,0.1136
-Iran,G,85,Thu 2 July,8:00 pm (UTC-07),Vancouver,0.2564
-Iran,G,88,Fri 3 July,1:00 pm (UTC-05),Arlington,0.1799
-Iran,G,,Eliminated in groups,,,0.45
-Iraq,I,80,Wed 1 July,12:00 pm (UTC-04),Atlanta,0.0018
-Iraq,I,,Eliminated in groups,,,0.9972
+Iran,G,82,Wed 1 July,1:00 pm (UTC-07),Seattle,0.1091
+Iran,G,85,Thu 2 July,8:00 pm (UTC-07),Vancouver,0.2043
+Iran,G,88,Fri 3 July,1:00 pm (UTC-05),Arlington,0.1706
+Iran,G,,Eliminated in groups,,,0.516
+Iraq,I,,Eliminated in groups,,,1
 Japan,F,76,Mon 29 June,12:00 pm (UTC-05),Houston,1.0
 Jordan,J,,Eliminated in groups,,,1
 Mexico,A,79,Tue 30 June,7:00 pm (UTC-06),Mexico City,1.0
 Morocco,C,75,Mon 29 June,7:00 pm (UTC-06),Guadalupe,1.0
 Netherlands,F,75,Mon 29 June,7:00 pm (UTC-06),Guadalupe,1.0
-New Zealand,G,85,Thu 2 July,8:00 pm (UTC-07),Vancouver,0.0184
-New Zealand,G,88,Fri 3 July,1:00 pm (UTC-05),Arlington,0.0516
-New Zealand,G,,Eliminated in groups,,,0.93
-Norway,I,77,Tue 30 June,5:00 pm (UTC-04),East Rutherford,0.2006
-Norway,I,78,Tue 30 June,12:00 pm (UTC-05),Arlington,0.7994
+New Zealand,G,85,Thu 2 July,8:00 pm (UTC-07),Vancouver,0.0224
+New Zealand,G,88,Fri 3 July,1:00 pm (UTC-05),Arlington,0.0552
+New Zealand,G,,Eliminated in groups,,,0.9224
+Norway,I,78,Tue 30 June,12:00 pm (UTC-05),Arlington,1.0
 Panama,L,,Eliminated in groups,,,1
-Paraguay,D,74,Mon 29 June,4:30 pm (UTC-04),Foxborough,0.9966
-Paraguay,D,77,Tue 30 June,5:00 pm (UTC-04),East Rutherford,0.0012
-Paraguay,D,87,Fri 3 July,8:30 pm (UTC-05),Kansas City,0.0007
-Paraguay,D,,Eliminated in groups,,,0.0015
-Portugal,K,80,Wed 1 July,12:00 pm (UTC-04),Atlanta,0.0023
-Portugal,K,83,Thu 2 July,7:00 pm (UTC-04),Toronto,0.4924
-Portugal,K,87,Fri 3 July,8:30 pm (UTC-05),Kansas City,0.5053
+Paraguay,D,74,Mon 29 June,4:30 pm (UTC-04),Foxborough,0.9977
+Paraguay,D,,Eliminated in groups,,,0.0022
+Portugal,K,80,Wed 1 July,12:00 pm (UTC-04),Atlanta,0.002
+Portugal,K,83,Thu 2 July,7:00 pm (UTC-04),Toronto,0.4943
+Portugal,K,87,Fri 3 July,8:30 pm (UTC-05),Kansas City,0.5037
 Qatar,B,,Eliminated in groups,,,1
-Saudi Arabia,H,79,Tue 30 June,7:00 pm (UTC-06),Mexico City,0.0288
-Saudi Arabia,H,82,Wed 1 July,1:00 pm (UTC-07),Seattle,0.0218
-Saudi Arabia,H,86,Fri 3 July,6:00 pm (UTC-04),Miami Gardens,0.2953
-Saudi Arabia,H,,Eliminated in groups,,,0.6541
-Scotland,C,74,Mon 29 June,4:30 pm (UTC-04),Foxborough,0.0064
-Scotland,C,79,Tue 30 June,7:00 pm (UTC-06),Mexico City,0.046
-Scotland,C,,Eliminated in groups,,,0.9476
-Senegal,I,80,Wed 1 July,12:00 pm (UTC-04),Atlanta,0.3749
-Senegal,I,82,Wed 1 July,1:00 pm (UTC-07),Seattle,0.0963
-Senegal,I,85,Thu 2 July,8:00 pm (UTC-07),Vancouver,0.053
-Senegal,I,87,Fri 3 July,8:30 pm (UTC-05),Kansas City,0.0448
-Senegal,I,,Eliminated in groups,,,0.431
+Saudi Arabia,H,79,Tue 30 June,7:00 pm (UTC-06),Mexico City,0.0154
+Saudi Arabia,H,82,Wed 1 July,1:00 pm (UTC-07),Seattle,0.0476
+Saudi Arabia,H,86,Fri 3 July,6:00 pm (UTC-04),Miami Gardens,0.2764
+Saudi Arabia,H,,Eliminated in groups,,,0.6606
+Scotland,C,74,Mon 29 June,4:30 pm (UTC-04),Foxborough,0.0006
+Scotland,C,79,Tue 30 June,7:00 pm (UTC-06),Mexico City,0.0119
+Scotland,C,,Eliminated in groups,,,0.9875
+Senegal,I,80,Wed 1 July,12:00 pm (UTC-04),Atlanta,0.5554
+Senegal,I,82,Wed 1 July,1:00 pm (UTC-07),Seattle,0.2139
+Senegal,I,85,Thu 2 July,8:00 pm (UTC-07),Vancouver,0.102
+Senegal,I,87,Fri 3 July,8:30 pm (UTC-05),Kansas City,0.0698
+Senegal,I,,Eliminated in groups,,,0.0589
 South Africa,A,73,Sun 28 June,12:00 pm (UTC-07),Inglewood,1.0
-South Korea,A,82,Wed 1 July,1:00 pm (UTC-07),Seattle,0.5324
-South Korea,A,,Eliminated in groups,,,0.4676
-Spain,H,79,Tue 30 June,7:00 pm (UTC-06),Mexico City,0.032
-Spain,H,82,Wed 1 July,1:00 pm (UTC-07),Seattle,0.0241
-Spain,H,84,Thu 2 July,12:00 pm (UTC-07),Inglewood,0.8474
-Spain,H,86,Fri 3 July,6:00 pm (UTC-04),Miami Gardens,0.0965
-Sweden,F,77,Tue 30 June,5:00 pm (UTC-04),East Rutherford,0.9985
-Sweden,F,85,Thu 2 July,8:00 pm (UTC-07),Vancouver,0.0012
+South Korea,A,82,Wed 1 July,1:00 pm (UTC-07),Seattle,0.3605
+South Korea,A,,Eliminated in groups,,,0.6395
+Spain,H,79,Tue 30 June,7:00 pm (UTC-06),Mexico City,0.0176
+Spain,H,82,Wed 1 July,1:00 pm (UTC-07),Seattle,0.0544
+Spain,H,84,Thu 2 July,12:00 pm (UTC-07),Inglewood,0.8143
+Spain,H,86,Fri 3 July,6:00 pm (UTC-04),Miami Gardens,0.1137
+Sweden,F,77,Tue 30 June,5:00 pm (UTC-04),East Rutherford,1.0
 Switzerland,B,85,Thu 2 July,8:00 pm (UTC-07),Vancouver,1.0
 Tunisia,F,,Eliminated in groups,,,1
 Turkiye,D,,Eliminated in groups,,,1
 USA,D,81,Wed 1 July,5:00 pm (UTC-07),Santa Clara,1.0
-Uruguay,H,79,Tue 30 June,7:00 pm (UTC-06),Mexico City,0.0932
-Uruguay,H,82,Wed 1 July,1:00 pm (UTC-07),Seattle,0.0703
-Uruguay,H,84,Thu 2 July,12:00 pm (UTC-07),Inglewood,0.1256
-Uruguay,H,86,Fri 3 July,6:00 pm (UTC-04),Miami Gardens,0.075
-Uruguay,H,,Eliminated in groups,,,0.6359
-Uzbekistan,K,80,Wed 1 July,12:00 pm (UTC-04),Atlanta,0.002
-Uzbekistan,K,,Eliminated in groups,,,0.998
+Uruguay,H,79,Tue 30 June,7:00 pm (UTC-06),Mexico City,0.035
+Uruguay,H,82,Wed 1 July,1:00 pm (UTC-07),Seattle,0.1083
+Uruguay,H,84,Thu 2 July,12:00 pm (UTC-07),Inglewood,0.1504
+Uruguay,H,86,Fri 3 July,6:00 pm (UTC-04),Miami Gardens,0.0835
+Uruguay,H,,Eliminated in groups,,,0.6228
+Uzbekistan,K,80,Wed 1 July,12:00 pm (UTC-04),Atlanta,0.0012
+Uzbekistan,K,,Eliminated in groups,,,0.9988

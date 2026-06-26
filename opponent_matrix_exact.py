@@ -29,19 +29,19 @@ POSITIONS = [
     ('D','USA',100,0,0,0),('D','Australia',0,100,0,0),('D','Paraguay',0,0,100,0),('D','Turkiye',0,0,0,100),
     ('E','Germany',100,0,0,0),('E',"Cote d'Ivoire",0,100,0,0),('E','Ecuador',0,0,100,0),('E','Curacao',0,0,0,100),
     ('F','Netherlands',100,0,0,0),('F','Japan',0,100,0,0),('F','Sweden',0,0,100,0),('F','Tunisia',0,0,0,100),
-    ('G','Egypt',61.23,17.54,21.23,0),('G','Belgium',27.41,59.31,7.42,5.86),('G','Iran',11.36,17.99,67.71,2.94),('G','New Zealand',0,5.16,3.64,91.20),
-    ('H','Spain',84.74,9.65,5.61,0),('H','Cabo Verde',2.70,53.33,19.42,24.56),('H','Uruguay',12.56,7.50,69.38,10.56),('H','Saudi Arabia',0,29.53,5.59,64.88),
-    ('I','France',79.94,20.06,0,0),('I','Norway',20.06,79.94,0,0),('I','Senegal',0,0,91.20,8.80),('I','Iraq',0,0,8.80,91.20),
-    ('J','Argentina',100,0,0,0),('J','Austria',0,73.10,26.90,0),('J','Algeria',0,26.90,73.10,0),('J','Jordan',0,0,0,100),
-    ('K','Colombia',49.47,50.53,0,0),('K','Portugal',50.53,49.24,0.21,0),('K','Congo DR',0,0.22,69.05,30.72),('K','Uzbekistan',0,0,30.72,69.28),
-    ('L','England',84.61,15.06,0.33,0),('L','Ghana',4.83,38.87,56.30,0),('L','Croatia',10.56,46.07,43.37,0),('L','Panama',0,0,0,100),
+    ('G','Egypt',62.26,17.88,19.86,0),('G','Belgium',26.83,59.54,7.57,6.07),('G','Iran',10.91,17.06,68.67,3.36),('G','New Zealand',0,5.52,3.90,90.58),
+    ('H','Spain',81.43,11.37,7.20,0),('H','Cabo Verde',3.54,52.64,18.93,24.90),('H','Uruguay',15.04,8.35,67.57,9.05),('H','Saudi Arabia',0,27.64,6.30,66.06),
+    ('I','France',100,0,0,0),('I','Norway',0,100,0,0),('I','Senegal',0,0,100,0),('I','Iraq',0,0,0,100),
+    ('J','Argentina',100,0,0,0),('J','Austria',0,73.13,26.87,0),('J','Algeria',0,26.87,73.13,0),('J','Jordan',0,0,0,100),
+    ('K','Colombia',49.63,50.37,0,0),('K','Portugal',50.37,49.43,0.20,0),('K','Congo DR',0,0.20,69.63,30.17),('K','Uzbekistan',0,0,30.17,69.83),
+    ('L','England',83.86,15.74,0.40,0),('L','Ghana',5.54,38.52,55.94,0),('L','Croatia',10.60,45.74,43.66,0),('L','Panama',0,0,0,100),
 ]
 QUAL = {'France':1,'Argentina':1,'Spain':1,'England':1,'Germany':1,'Brazil':1,'Portugal':1,'Netherlands':1,
 'Norway':1,'USA':1,'Colombia':1,'Mexico':1,'Switzerland':1,'Morocco':1,'Japan':1,'Canada':1,
 'Egypt':1,'Ecuador':1,'Australia':1,'Sweden':1,'Bosnia':1,"Cote d'Ivoire":1,'South Africa':1,
-'Belgium':.9216,'Croatia':.8907,'Ghana':.9996,'Austria':.9036,'Paraguay':.9985,'Algeria':.7465,
-'Senegal':.569,'Iran':.55,'South Korea':.5324,'Cabo Verde':.6395,'Congo DR':.4116,'Saudi Arabia':.3459,
-'Uruguay':.3641,'New Zealand':.07,'Scotland':.0524,'Iraq':.0028,'Uzbekistan':.002,
+'Belgium':.9027,'Croatia':.8710,'Ghana':.9995,'Austria':.8660,'Paraguay':.9978,'Algeria':.7227,
+'Senegal':.9411,'Iran':.4840,'South Korea':.3605,'Cabo Verde':.6309,'Congo DR':.4159,'Saudi Arabia':.3394,
+'Uruguay':.3772,'New Zealand':.0776,'Scotland':.0125,'Iraq':0,'Uzbekistan':.0012,
 'Czechia':0,'Qatar':0,'Haiti':0,'Turkiye':0,'Tunisia':0,'Jordan':0,'Panama':0,'Curacao':0}
 
 GROUPS = list('ABCDEFGHIJKL')
@@ -53,7 +53,7 @@ POS_LABELS = ['1st','2nd','3rd','4th']
 # impossible qualifier combinations the independent model would otherwise allow.
 # UPDATE each refresh from Opta's "Ranking of third-placed teams" (completed
 # groups only, best to worst by points/GD/GF); set to [] to disable pruning.
-LOCKED_THIRDS_ORDER = ['F', 'E', 'B', 'D', 'A', 'C']  # Swe, Ecu, Bos, Par, Kor, Sco
+LOCKED_THIRDS_ORDER = ['F', 'E', 'B', 'D', 'I', 'A', 'C']  # Swe, Ecu, Bos, Par, Sen, Kor, Sco
 
 def _locked_ok(S):
     out = False
