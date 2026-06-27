@@ -1,229 +1,130 @@
 group,team,league_position,prob_of_position,possible_opponent,prob_of_opponent_given_position,joint_probability
-A,Mexico,1st,1.0,Ecuador,0.9203,0.9203
-A,Mexico,1st,1.0,Uruguay,0.0323,0.0323
-A,Mexico,1st,1.0,Spain,0.0162,0.0162
-A,Mexico,1st,1.0,Cabo Verde,0.0156,0.0156
-A,Mexico,1st,1.0,Saudi Arabia,0.0142,0.0142
-A,Mexico,1st,1.0,Scotland,0.0014,0.0014
+A,Mexico,1st,1.0,Ecuador,1.0,1.0
 A,South Africa,2nd,1.0,Canada,1.0,1.0
-A,South Korea,3rd,1.0,Eliminated (not best-8 third),0.6395,0.6395
-A,South Korea,3rd,1.0,Egypt,0.2244,0.2244
-A,South Korea,3rd,1.0,Belgium,0.0967,0.0967
-A,South Korea,3rd,1.0,Iran,0.0393,0.0393
+A,South Korea,3rd,1.0,Eliminated (not best-8 third),0.671,0.671
+A,South Korea,3rd,1.0,Belgium,0.329,0.329
 A,Czechia,4th,1.0,Eliminated (4th),1.0,1.0
-B,Switzerland,1st,1.0,Algeria,0.2983,0.2983
-B,Switzerland,1st,1.0,Iran,0.2028,0.2028
-B,Switzerland,1st,1.0,Egypt,0.1972,0.1972
-B,Switzerland,1st,1.0,Senegal,0.1061,0.1061
-B,Switzerland,1st,1.0,Austria,0.0885,0.0885
-B,Switzerland,1st,1.0,Ecuador,0.0461,0.0461
-B,Switzerland,1st,1.0,Belgium,0.0387,0.0387
-B,Switzerland,1st,1.0,New Zealand,0.0222,0.0222
+B,Switzerland,1st,1.0,Iran,0.9518,0.9518
+B,Switzerland,1st,1.0,Algeria,0.0363,0.0363
+B,Switzerland,1st,1.0,Austria,0.0119,0.0119
 B,Canada,2nd,1.0,South Africa,1.0,1.0
 B,Bosnia,3rd,1.0,USA,1.0,1.0
 B,Qatar,4th,1.0,Eliminated (4th),1.0,1.0
 C,Brazil,1st,1.0,Japan,1.0,1.0
 C,Morocco,2nd,1.0,Netherlands,1.0,1.0
-C,Scotland,3rd,1.0,Eliminated (not best-8 third),0.9875,0.9875
-C,Scotland,3rd,1.0,Mexico,0.0119,0.0119
-C,Scotland,3rd,1.0,Germany,0.0006,0.0006
+C,Scotland,3rd,1.0,Eliminated (not best-8 third),0.9993,0.9993
+C,Scotland,3rd,1.0,Mexico,0.0007,0.0007
 C,Haiti,4th,1.0,Eliminated (4th),1.0,1.0
 D,USA,1st,1.0,Bosnia,1.0,1.0
-D,Australia,2nd,1.0,Belgium,0.5954,0.5954
-D,Australia,2nd,1.0,Egypt,0.1788,0.1788
-D,Australia,2nd,1.0,Iran,0.1706,0.1706
-D,Australia,2nd,1.0,New Zealand,0.0552,0.0552
-D,Paraguay,3rd,1.0,Germany,0.9977,0.9977
-D,Paraguay,3rd,1.0,Eliminated (not best-8 third),0.0022,0.0022
+D,Australia,2nd,1.0,Egypt,1.0,1.0
+D,Paraguay,3rd,1.0,Germany,1.0,1.0
 D,Turkiye,4th,1.0,Eliminated (4th),1.0,1.0
-E,Germany,1st,1.0,Paraguay,0.9999,0.9999
+E,Germany,1st,1.0,Paraguay,1.0,1.0
 E,Cote d'Ivoire,2nd,1.0,Norway,1.0,1.0
-E,Ecuador,3rd,1.0,Mexico,0.9203,0.9203
-E,Ecuador,3rd,1.0,Switzerland,0.0461,0.0461
-E,Ecuador,3rd,1.0,Portugal,0.0142,0.0142
-E,Ecuador,3rd,1.0,Colombia,0.0139,0.0139
-E,Ecuador,3rd,1.0,England,0.0047,0.0047
-E,Ecuador,3rd,1.0,Croatia,0.0006,0.0006
+E,Ecuador,3rd,1.0,Mexico,1.0,1.0
 E,Curacao,4th,1.0,Eliminated (4th),1.0,1.0
 F,Netherlands,1st,1.0,Morocco,1.0,1.0
 F,Japan,2nd,1.0,Brazil,1.0,1.0
 F,Sweden,3rd,1.0,France,1.0,1.0
 F,Tunisia,4th,1.0,Eliminated (4th),1.0,1.0
-G,Egypt,1st,0.6226,South Korea,0.3228,0.201
-G,Egypt,1st,0.6226,Senegal,0.2225,0.1385
-G,Egypt,1st,0.6226,Algeria,0.164,0.1021
-G,Egypt,1st,0.6226,Uruguay,0.0998,0.0622
-G,Egypt,1st,0.6226,Spain,0.0502,0.0312
-G,Egypt,1st,0.6226,Austria,0.0487,0.0303
-G,Egypt,1st,0.6226,Cabo Verde,0.0481,0.03
-G,Egypt,1st,0.6226,Saudi Arabia,0.0439,0.0273
-G,Egypt,2nd,0.1788,Australia,1.0,0.1788
-G,Egypt,3rd,0.1986,Switzerland,1.0,0.1986
-G,Belgium,1st,0.2683,South Korea,0.3228,0.0866
-G,Belgium,1st,0.2683,Senegal,0.2225,0.0597
-G,Belgium,1st,0.2683,Algeria,0.164,0.044
-G,Belgium,1st,0.2683,Uruguay,0.0998,0.0268
-G,Belgium,1st,0.2683,Spain,0.0502,0.0135
-G,Belgium,1st,0.2683,Austria,0.0487,0.0131
-G,Belgium,1st,0.2683,Cabo Verde,0.0481,0.0129
-G,Belgium,1st,0.2683,Saudi Arabia,0.0439,0.0118
-G,Belgium,2nd,0.5954,Australia,1.0,0.5954
-G,Belgium,3rd,0.0757,Switzerland,0.5152,0.039
-G,Belgium,3rd,0.0757,Eliminated (not best-8 third),0.4848,0.0367
-G,Belgium,4th,0.0607,Eliminated (4th),1.0,0.0607
-G,Iran,1st,0.1091,South Korea,0.3228,0.0352
-G,Iran,1st,0.1091,Senegal,0.2225,0.0243
-G,Iran,1st,0.1091,Algeria,0.164,0.0179
-G,Iran,1st,0.1091,Uruguay,0.0998,0.0109
-G,Iran,1st,0.1091,Spain,0.0502,0.0055
-G,Iran,1st,0.1091,Austria,0.0487,0.0053
-G,Iran,1st,0.1091,Cabo Verde,0.0481,0.0053
-G,Iran,1st,0.1091,Saudi Arabia,0.0439,0.0048
-G,Iran,2nd,0.1706,Australia,1.0,0.1706
-G,Iran,3rd,0.6867,Eliminated (not best-8 third),0.7025,0.4824
-G,Iran,3rd,0.6867,Switzerland,0.2975,0.2043
-G,Iran,4th,0.0336,Eliminated (4th),1.0,0.0336
-G,New Zealand,2nd,0.0552,Australia,1.0,0.0552
-G,New Zealand,3rd,0.039,Switzerland,0.5743,0.0224
-G,New Zealand,3rd,0.039,Eliminated (not best-8 third),0.4256,0.0166
-G,New Zealand,4th,0.9058,Eliminated (4th),1.0,0.9058
-H,Spain,1st,0.8143,Austria,0.7313,0.5955
-H,Spain,1st,0.8143,Algeria,0.2687,0.2188
-H,Spain,2nd,0.1137,Argentina,1.0,0.1137
-H,Spain,3rd,0.072,Egypt,0.4704,0.0339
-H,Spain,3rd,0.072,Mexico,0.2445,0.0176
-H,Spain,3rd,0.072,Belgium,0.2027,0.0146
-H,Spain,3rd,0.072,Iran,0.0824,0.0059
-H,Cabo Verde,1st,0.0354,Austria,0.7313,0.0259
-H,Cabo Verde,1st,0.0354,Algeria,0.2687,0.0095
-H,Cabo Verde,2nd,0.5264,Argentina,1.0,0.5264
-H,Cabo Verde,3rd,0.1893,Eliminated (not best-8 third),0.635,0.1202
-H,Cabo Verde,3rd,0.1893,Egypt,0.1717,0.0325
-H,Cabo Verde,3rd,0.1893,Mexico,0.0893,0.0169
-H,Cabo Verde,3rd,0.1893,Belgium,0.074,0.014
-H,Cabo Verde,3rd,0.1893,Iran,0.0301,0.0057
-H,Cabo Verde,4th,0.249,Eliminated (4th),1.0,0.249
-H,Uruguay,1st,0.1504,Austria,0.7313,0.11
-H,Uruguay,1st,0.1504,Algeria,0.2687,0.0404
-H,Uruguay,2nd,0.0835,Argentina,1.0,0.0835
-H,Uruguay,3rd,0.6757,Eliminated (not best-8 third),0.7879,0.5324
-H,Uruguay,3rd,0.6757,Egypt,0.0998,0.0674
-H,Uruguay,3rd,0.6757,Mexico,0.0519,0.035
-H,Uruguay,3rd,0.6757,Belgium,0.043,0.029
-H,Uruguay,3rd,0.6757,Iran,0.0175,0.0118
-H,Uruguay,4th,0.0905,Eliminated (4th),1.0,0.0905
-H,Saudi Arabia,2nd,0.2764,Argentina,1.0,0.2764
-H,Saudi Arabia,3rd,0.063,Egypt,0.4704,0.0296
-H,Saudi Arabia,3rd,0.063,Mexico,0.2445,0.0154
-H,Saudi Arabia,3rd,0.063,Belgium,0.2027,0.0128
-H,Saudi Arabia,3rd,0.063,Iran,0.0824,0.0052
-H,Saudi Arabia,4th,0.6606,Eliminated (4th),1.0,0.6606
+G,Belgium,1st,1.0,Algeria,0.3712,0.3712
+G,Belgium,1st,1.0,Senegal,0.2786,0.2786
+G,Belgium,1st,1.0,South Korea,0.2282,0.2282
+G,Belgium,1st,1.0,Austria,0.122,0.122
+G,Egypt,2nd,1.0,Australia,1.0,1.0
+G,Iran,3rd,1.0,Switzerland,0.8623,0.8623
+G,Iran,3rd,1.0,Eliminated (not best-8 third),0.1377,0.1377
+G,New Zealand,4th,1.0,Eliminated (4th),1.0,1.0
+H,Spain,1st,1.0,Austria,0.7363,0.7363
+H,Spain,1st,1.0,Algeria,0.2637,0.2637
+H,Cabo Verde,2nd,1.0,Argentina,1.0,1.0
+H,Uruguay,3rd,1.0,Eliminated (not best-8 third),1.0,1.0
+H,Saudi Arabia,4th,1.0,Eliminated (4th),1.0,1.0
 I,France,1st,1.0,Sweden,1.0,1.0
 I,Norway,2nd,1.0,Cote d'Ivoire,1.0,1.0
-I,Senegal,3rd,1.0,England,0.4658,0.4658
-I,Senegal,3rd,1.0,Egypt,0.1332,0.1332
-I,Senegal,3rd,1.0,Switzerland,0.102,0.102
-I,Senegal,3rd,1.0,Eliminated (not best-8 third),0.0589,0.0589
-I,Senegal,3rd,1.0,Croatia,0.0589,0.0589
-I,Senegal,3rd,1.0,Belgium,0.0574,0.0574
-I,Senegal,3rd,1.0,Portugal,0.0352,0.0352
-I,Senegal,3rd,1.0,Colombia,0.0347,0.0347
-I,Senegal,3rd,1.0,Ghana,0.0308,0.0308
-I,Senegal,3rd,1.0,Iran,0.0233,0.0233
+I,Senegal,3rd,1.0,England,0.4954,0.4954
+I,Senegal,3rd,1.0,Belgium,0.2786,0.2786
+I,Senegal,3rd,1.0,Colombia,0.0687,0.0687
+I,Senegal,3rd,1.0,Croatia,0.0612,0.0612
+I,Senegal,3rd,1.0,Portugal,0.0602,0.0602
+I,Senegal,3rd,1.0,Ghana,0.0359,0.0359
 I,Iraq,4th,1.0,Eliminated (4th),1.0,1.0
-J,Argentina,1st,1.0,Cabo Verde,0.5264,0.5264
-J,Argentina,1st,1.0,Saudi Arabia,0.2764,0.2764
-J,Argentina,1st,1.0,Spain,0.1137,0.1137
-J,Argentina,1st,1.0,Uruguay,0.0835,0.0835
-J,Austria,2nd,0.7313,Spain,0.8142,0.5954
-J,Austria,2nd,0.7313,Uruguay,0.1504,0.11
-J,Austria,2nd,0.7313,Cabo Verde,0.0354,0.0259
-J,Austria,3rd,0.2687,Eliminated (not best-8 third),0.4987,0.134
-J,Austria,3rd,0.2687,Switzerland,0.316,0.0849
-J,Austria,3rd,0.2687,Egypt,0.1082,0.0291
-J,Austria,3rd,0.2687,Belgium,0.0466,0.0125
-J,Austria,3rd,0.2687,Iran,0.019,0.0051
-J,Austria,3rd,0.2687,England,0.0096,0.0026
-J,Austria,3rd,0.2687,Croatia,0.0012,0.0003
-J,Austria,3rd,0.2687,Ghana,0.0006,0.0002
-J,Algeria,2nd,0.2687,Spain,0.8142,0.2188
-J,Algeria,2nd,0.2687,Uruguay,0.1504,0.0404
-J,Algeria,2nd,0.2687,Cabo Verde,0.0354,0.0095
-J,Algeria,3rd,0.7313,Switzerland,0.3914,0.2862
-J,Algeria,3rd,0.7313,Eliminated (not best-8 third),0.3792,0.2773
-J,Algeria,3rd,0.7313,Egypt,0.134,0.098
-J,Algeria,3rd,0.7313,Belgium,0.0577,0.0422
-J,Algeria,3rd,0.7313,Iran,0.0235,0.0172
-J,Algeria,3rd,0.7313,England,0.0119,0.0087
-J,Algeria,3rd,0.7313,Croatia,0.0015,0.0011
-J,Algeria,3rd,0.7313,Ghana,0.0008,0.0006
+J,Argentina,1st,1.0,Cabo Verde,1.0,1.0
+J,Austria,2nd,0.7363,Spain,1.0,0.7363
+J,Austria,3rd,0.2637,Eliminated (not best-8 third),0.468,0.1234
+J,Austria,3rd,0.2637,Belgium,0.4486,0.1183
+J,Austria,3rd,0.2637,Switzerland,0.0438,0.0116
+J,Austria,3rd,0.2637,England,0.0331,0.0087
+J,Austria,3rd,0.2637,Croatia,0.0041,0.0011
+J,Austria,3rd,0.2637,Ghana,0.0024,0.0006
+J,Algeria,2nd,0.2637,Spain,1.0,0.2637
+J,Algeria,3rd,0.7363,Belgium,0.4887,0.3598
+J,Algeria,3rd,0.7363,Eliminated (not best-8 third),0.4205,0.3096
+J,Algeria,3rd,0.7363,Switzerland,0.0477,0.0351
+J,Algeria,3rd,0.7363,England,0.036,0.0265
+J,Algeria,3rd,0.7363,Croatia,0.0045,0.0033
+J,Algeria,3rd,0.7363,Ghana,0.0026,0.0019
 J,Jordan,4th,1.0,Eliminated (4th),1.0,1.0
-K,Colombia,1st,0.4963,Ghana,0.5773,0.2865
-K,Colombia,1st,0.4963,Croatia,0.3177,0.1577
-K,Colombia,1st,0.4963,Senegal,0.0726,0.036
-K,Colombia,1st,0.4963,Ecuador,0.0281,0.0139
-K,Colombia,1st,0.4963,England,0.0041,0.0021
-K,Colombia,2nd,0.5037,Croatia,0.4574,0.2304
-K,Colombia,2nd,0.5037,Ghana,0.3852,0.194
-K,Colombia,2nd,0.5037,England,0.1574,0.0793
-K,Portugal,1st,0.5037,Ghana,0.5773,0.2908
-K,Portugal,1st,0.5037,Croatia,0.3177,0.16
-K,Portugal,1st,0.5037,Senegal,0.0726,0.0366
-K,Portugal,1st,0.5037,Ecuador,0.0281,0.0142
-K,Portugal,1st,0.5037,England,0.0041,0.0021
-K,Portugal,2nd,0.4943,Croatia,0.4574,0.2261
-K,Portugal,2nd,0.4943,Ghana,0.3852,0.1904
-K,Portugal,2nd,0.4943,England,0.1574,0.0778
-K,Portugal,3rd,0.002,England,0.8386,0.0017
-K,Portugal,3rd,0.002,Croatia,0.106,0.0002
-K,Portugal,3rd,0.002,Ghana,0.0554,0.0001
-K,Congo DR,2nd,0.002,Croatia,0.4574,0.0009
-K,Congo DR,2nd,0.002,Ghana,0.3852,0.0008
-K,Congo DR,2nd,0.002,England,0.1574,0.0003
-K,Congo DR,3rd,0.6963,England,0.4985,0.3471
-K,Congo DR,3rd,0.6963,Eliminated (not best-8 third),0.4056,0.2824
-K,Congo DR,3rd,0.6963,Croatia,0.063,0.0439
-K,Congo DR,3rd,0.6963,Ghana,0.0329,0.0229
-K,Congo DR,4th,0.3017,Eliminated (4th),1.0,0.3017
-K,Uzbekistan,3rd,0.3017,Eliminated (not best-8 third),0.996,0.3005
-K,Uzbekistan,3rd,0.3017,England,0.0033,0.001
-K,Uzbekistan,4th,0.6983,Eliminated (4th),1.0,0.6983
-L,England,1st,0.8386,Senegal,0.5777,0.4845
-L,England,1st,0.8386,Congo DR,0.3996,0.3351
-L,England,1st,0.8386,Algeria,0.0109,0.0091
-L,England,1st,0.8386,Ecuador,0.0056,0.0047
-L,England,1st,0.8386,Austria,0.0032,0.0027
-L,England,1st,0.8386,Portugal,0.0019,0.0016
-L,England,1st,0.8386,Uzbekistan,0.0012,0.001
-L,England,2nd,0.1574,Colombia,0.5037,0.0793
-L,England,2nd,0.1574,Portugal,0.4943,0.0778
-L,England,2nd,0.1574,Congo DR,0.002,0.0003
-L,England,3rd,0.004,Portugal,0.5037,0.002
-L,England,3rd,0.004,Colombia,0.4963,0.002
-L,Ghana,1st,0.0554,Senegal,0.5777,0.032
-L,Ghana,1st,0.0554,Congo DR,0.3996,0.0221
-L,Ghana,1st,0.0554,Algeria,0.0109,0.0006
-L,Ghana,1st,0.0554,Ecuador,0.0056,0.0003
-L,Ghana,1st,0.0554,Austria,0.0032,0.0002
-L,Ghana,1st,0.0554,Portugal,0.0019,0.0001
-L,Ghana,1st,0.0554,Uzbekistan,0.0012,0.0001
-L,Ghana,2nd,0.3852,Colombia,0.5037,0.194
-L,Ghana,2nd,0.3852,Portugal,0.4943,0.1904
-L,Ghana,2nd,0.3852,Congo DR,0.002,0.0008
-L,Ghana,3rd,0.5594,Portugal,0.5032,0.2815
-L,Ghana,3rd,0.5594,Colombia,0.4959,0.2774
-L,Ghana,3rd,0.5594,Eliminated (not best-8 third),0.0009,0.0005
-L,Croatia,1st,0.106,Senegal,0.5777,0.0612
-L,Croatia,1st,0.106,Congo DR,0.3996,0.0424
-L,Croatia,1st,0.106,Algeria,0.0109,0.0012
-L,Croatia,1st,0.106,Ecuador,0.0056,0.0006
-L,Croatia,1st,0.106,Austria,0.0032,0.0003
-L,Croatia,1st,0.106,Portugal,0.0019,0.0002
-L,Croatia,1st,0.106,Uzbekistan,0.0012,0.0001
-L,Croatia,2nd,0.4574,Colombia,0.5037,0.2304
-L,Croatia,2nd,0.4574,Portugal,0.4943,0.2261
-L,Croatia,2nd,0.4574,Congo DR,0.002,0.0009
-L,Croatia,3rd,0.4366,Portugal,0.3549,0.1549
-L,Croatia,3rd,0.4366,Colombia,0.3497,0.1527
-L,Croatia,3rd,0.4366,Eliminated (not best-8 third),0.2955,0.129
+K,Colombia,1st,0.5332,Ghana,0.5462,0.2912
+K,Colombia,1st,0.5332,Croatia,0.3218,0.1716
+K,Colombia,1st,0.5332,Senegal,0.1289,0.0687
+K,Colombia,1st,0.5332,England,0.003,0.0016
+K,Colombia,2nd,0.4668,Croatia,0.4196,0.1959
+K,Colombia,2nd,0.4668,Ghana,0.4194,0.1958
+K,Colombia,2nd,0.4668,England,0.161,0.0752
+K,Portugal,1st,0.4668,Ghana,0.5462,0.255
+K,Portugal,1st,0.4668,Croatia,0.3218,0.1502
+K,Portugal,1st,0.4668,Senegal,0.1289,0.0602
+K,Portugal,1st,0.4668,England,0.003,0.0014
+K,Portugal,2nd,0.5312,Croatia,0.4196,0.2229
+K,Portugal,2nd,0.5312,Ghana,0.4194,0.2228
+K,Portugal,2nd,0.5312,England,0.161,0.0855
+K,Portugal,3rd,0.002,England,0.8361,0.0017
+K,Portugal,3rd,0.002,Croatia,0.1033,0.0002
+K,Portugal,3rd,0.002,Ghana,0.0606,0.0001
+K,Congo DR,2nd,0.002,Croatia,0.4196,0.0008
+K,Congo DR,2nd,0.002,Ghana,0.4194,0.0008
+K,Congo DR,2nd,0.002,England,0.161,0.0003
+K,Congo DR,3rd,0.688,England,0.4972,0.342
+K,Congo DR,3rd,0.688,Eliminated (not best-8 third),0.4054,0.2789
+K,Congo DR,3rd,0.688,Croatia,0.0614,0.0423
+K,Congo DR,3rd,0.688,Ghana,0.036,0.0248
+K,Congo DR,4th,0.31,Eliminated (4th),1.0,0.31
+K,Uzbekistan,3rd,0.31,Eliminated (not best-8 third),0.9981,0.3094
+K,Uzbekistan,3rd,0.31,England,0.0016,0.0005
+K,Uzbekistan,4th,0.69,Eliminated (4th),1.0,0.69
+L,England,1st,0.8361,Senegal,0.5926,0.4954
+L,England,1st,0.8361,Congo DR,0.3616,0.3024
+L,England,1st,0.8361,Algeria,0.0327,0.0274
+L,England,1st,0.8361,Austria,0.0108,0.009
+L,England,1st,0.8361,Portugal,0.0018,0.0015
+L,England,1st,0.8361,Uzbekistan,0.0005,0.0004
+L,England,2nd,0.161,Portugal,0.5312,0.0855
+L,England,2nd,0.161,Colombia,0.4668,0.0752
+L,England,2nd,0.161,Congo DR,0.002,0.0003
+L,England,3rd,0.0029,Colombia,0.5332,0.0015
+L,England,3rd,0.0029,Portugal,0.4668,0.0014
+L,Ghana,1st,0.0606,Senegal,0.5926,0.0359
+L,Ghana,1st,0.0606,Congo DR,0.3616,0.0219
+L,Ghana,1st,0.0606,Algeria,0.0327,0.002
+L,Ghana,1st,0.0606,Austria,0.0108,0.0007
+L,Ghana,1st,0.0606,Portugal,0.0018,0.0001
+L,Ghana,1st,0.0606,Uzbekistan,0.0005,0.0
+L,Ghana,2nd,0.4194,Portugal,0.5312,0.2228
+L,Ghana,2nd,0.4194,Colombia,0.4668,0.1958
+L,Ghana,2nd,0.4194,Congo DR,0.002,0.0008
+L,Ghana,3rd,0.52,Colombia,0.5332,0.2773
+L,Ghana,3rd,0.52,Portugal,0.4668,0.2427
+L,Croatia,1st,0.1033,Senegal,0.5926,0.0612
+L,Croatia,1st,0.1033,Congo DR,0.3616,0.0374
+L,Croatia,1st,0.1033,Algeria,0.0327,0.0034
+L,Croatia,1st,0.1033,Austria,0.0108,0.0011
+L,Croatia,1st,0.1033,Portugal,0.0018,0.0002
+L,Croatia,1st,0.1033,Uzbekistan,0.0005,0.0001
+L,Croatia,2nd,0.4196,Portugal,0.5312,0.2229
+L,Croatia,2nd,0.4196,Colombia,0.4668,0.1959
+L,Croatia,2nd,0.4196,Congo DR,0.002,0.0008
+L,Croatia,3rd,0.4771,Eliminated (not best-8 third),0.3578,0.1707
+L,Croatia,3rd,0.4771,Colombia,0.3424,0.1634
+L,Croatia,3rd,0.4771,Portugal,0.2998,0.143
 L,Panama,4th,1.0,Eliminated (4th),1.0,1.0

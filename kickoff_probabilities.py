@@ -20,9 +20,9 @@ from itertools import combinations
 QUAL = {'France':1,'Argentina':1,'Spain':1,'England':1,'Germany':1,'Brazil':1,'Portugal':1,'Netherlands':1,
 'Norway':1,'USA':1,'Colombia':1,'Mexico':1,'Switzerland':1,'Morocco':1,'Japan':1,'Canada':1,
 'Egypt':1,'Ecuador':1,'Australia':1,'Sweden':1,'Bosnia':1,"Cote d'Ivoire":1,'South Africa':1,
-'Belgium':.9027,'Croatia':.8710,'Ghana':.9995,'Austria':.8660,'Paraguay':.9978,'Algeria':.7227,
-'Senegal':.9411,'Iran':.4840,'South Korea':.3605,'Cabo Verde':.6309,'Congo DR':.4159,'Saudi Arabia':.3394,
-'Uruguay':.3772,'New Zealand':.0776,'Scotland':.0125,'Iraq':0,'Uzbekistan':.0012,
+'Belgium':1,'Cabo Verde':1,'Senegal':1,'Paraguay':1,'Ghana':1,
+'Austria':.8766,'Iran':.8623,'Croatia':.8293,'Algeria':.6904,'Congo DR':.4111,'South Korea':.3290,
+'Scotland':.0007,'Uzbekistan':.0006,'Uruguay':0,'New Zealand':0,'Saudi Arabia':0,'Iraq':0,
 'Czechia':0,'Qatar':0,'Haiti':0,'Turkiye':0,'Tunisia':0,'Jordan':0,'Panama':0,'Curacao':0}
 
 # R32 match number -> (month, day, kickoff, venue)
@@ -46,7 +46,7 @@ GROUPS = list('ABCDEFGHIJKL')
 
 # Completed-group thirds, ranked best->worst (see opponent_matrix_exact.py).
 # Advancing subset of these must be a top-down prefix; [] disables pruning.
-LOCKED_THIRDS_ORDER = ['F', 'E', 'B', 'D', 'I', 'A', 'C']  # Swe, Ecu, Bos, Par, Sen, Kor, Sco
+LOCKED_THIRDS_ORDER = ['F', 'E', 'B', 'D', 'I', 'G', 'A', 'C', 'H']  # Swe,Ecu,Bos,Par,Sen,Iran,Kor,Sco,Uru
 
 def _locked_ok(S):
     out = False

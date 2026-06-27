@@ -23,27 +23,27 @@ F,Netherlands,100,0,0,0
 F,Japan,0,100,0,0
 F,Sweden,0,0,100,0
 F,Tunisia,0,0,0,100
-G,Egypt,62.26,17.88,19.86,0
-G,Belgium,26.83,59.54,7.57,6.07
-G,Iran,10.91,17.06,68.67,3.36
-G,New Zealand,0,5.52,3.90,90.58
-H,Spain,81.43,11.37,7.20,0
-H,Cabo Verde,3.54,52.64,18.93,24.90
-H,Uruguay,15.04,8.35,67.57,9.05
-H,Saudi Arabia,0,27.64,6.30,66.06
+G,Belgium,100,0,0,0
+G,Egypt,0,100,0,0
+G,Iran,0,0,100,0
+G,New Zealand,0,0,0,100
+H,Spain,100,0,0,0
+H,Cabo Verde,0,100,0,0
+H,Uruguay,0,0,100,0
+H,Saudi Arabia,0,0,0,100
 I,France,100,0,0,0
 I,Norway,0,100,0,0
 I,Senegal,0,0,100,0
 I,Iraq,0,0,0,100
 J,Argentina,100,0,0,0
-J,Austria,0,73.13,26.87,0
-J,Algeria,0,26.87,73.13,0
+J,Austria,0,73.63,26.37,0
+J,Algeria,0,26.37,73.63,0
 J,Jordan,0,0,0,100
-K,Colombia,49.63,50.37,0,0
-K,Portugal,50.37,49.43,0.20,0
-K,Congo DR,0,0.20,69.63,30.17
-K,Uzbekistan,0,0,30.17,69.83
-L,England,83.86,15.74,0.40,0
-L,Ghana,5.54,38.52,55.94,0
-L,Croatia,10.60,45.74,43.66,0
+K,Colombia,53.32,46.68,0,0
+K,Portugal,46.68,53.12,0.20,0
+K,Congo DR,0,0.20,68.80,31.00
+K,Uzbekistan,0,0,31.00,69.00
+L,England,83.61,16.10,0.29,0
+L,Ghana,6.06,41.94,52.00,0
+L,Croatia,10.33,41.96,47.71,0
 L,Panama,0,0,0,100
